@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Career Guidance</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style2.css">
+    </head>
+    <body>
+        <header> 
+            <p>Home</p>
+            <p>About</p>
+            <p>Logout</p>
+        </header>
+        
+        <main>
+            
+
+            <div class="main2">
+                <div class="info section">
+                    <h1>Career Guidance Expert System</h1>
+                    <p>Dont Waste time studying the wrong course. Take the personality test to find your perfect career to take in University</p>
+                </div>
+                <div class="signpage section">
+                    <div class="signinner">
+
+                        <div class="method"><span class="login-select">login </span> or <span class="register-select"> register</span></div>
+                        <div class="login">
+                            <label for="username">username</label>
+                            <input type="text" name="username" title="username" id="login-name">
+            
+                            <label for="">Password</label>
+                            <input type="password" name="password" title="password" id="login-password">
+            
+                            <button type="button" class="login-student" onclick="registerStudent()">Login as Student</button>
+                            <button type="button" class="login-counsellor" onclick="registerStudent()">Login as Counsellor</button>
+            
+                        </div>
+                        <div class="register">
+                            <div class="register-method"><span class="student-register-method">student</span>or <span class="counsellor-register-method">counsellor</span></div>
+                            
+                            <div class="student-register">
+                                <label for="username">username</label>
+                                <input type="text" name="username" title="username" id="student-register-name">
+            
+                                <label for="password">Password</label>
+                                <input type="password" name="password" title="password" id="student-register-password">
+            
+                                <label for="fullname">Fullname</label>
+                                <input type="text" name="fullname" title="fullname" id="student-fullname">
+            
+                                <label for="student-email">Email</label>
+                                <input type="email" name="student-email" title="student-email" id="student-email">
+                                
+                                <label for="student-age">Age</label>
+                                <input type="number" name="student-age" title="student-age" id="student-register-age">
+            
+                                <label for="student-schoolname">Schoolname</label>
+                                <input type="text" name="student-schoolname" title="student-schoolname" id="student-register-schoolname">
+            
+                                <button type="button" class="register-student-done" onclick="registerStudent()">Register</button>
+                            </div>
+            
+                            <div class="counsellor-register">
+                                <label for="username">username</label>
+                                <input type="text" name="username" title="username" id="counsellor-register-name">
+            
+                                <label for="password">Password</label>
+                                <input type="password" name="password" title="password" id="counsellor-register-password">
+            
+                                <label for="student-email">Email</label>
+                                <input type="email" name="counsellor-email" title="counsellor-email" id="counsellor-email">
+                                
+                                <label for="counsellor-specialization">Specialization</label>
+                                <input type="text" name="counsellor-specialization" title="counsellor-specialization" id="counsellor-specialization">
+            
+                                <label for="counsellor-years-of-experience">Years of experience</label>
+                                <input type="number" name="counsellor-years-of-experience" title="counsellor-years-of-experience" id="counsellor-experience">
+                                <button type="button" class="register-counsellor-done" onclick="registerStudent()">Register</button>
+                            </div>
+            
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="script.js" async defer></script>
+    </body>
+</html>

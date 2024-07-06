@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", "sans-serif";
+    }
+html{
+    height: 100vh;
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+}
+
+header{
+    width: 100svw;
+    height: 10svh;
+    background-color: white;
+    /* background-image: linear-gradient(blueviolet,pink); */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: larger;
+    font-weight: 700;
+}
+
+main{
+    background-image: url('op2.jpg');
+    width: 100svw;
+    height: 90svh;
+    background-size: cover;
+
+    display: grid;
+    place-items: center;
+}
+.main2{
+    height: 80svh;
+    width: 90%;
+    overflow-y: hidden;
+
+    /* background-color: aquamarine; */
+    background-color: transparent;
+    display: flex;
+    /* border-radius: 30px; */
+
+}
+.section{
+    width: 50%;
+
+}
+.info{
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    font-size: larger;
+}
+.signpage{
+    display: grid;
+    place-items: center;
+    overflow-y: scroll;
+}
+.signinner{
+    width: 90%;
+    display: grid;
+    row-gap: 20px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 30px;
+    /* justify-content: center; */
+}
+
+.method,
+.register-method{
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.login{
+    display: grid;
+    row-gap: 20px;
+}
+.register{
+    display: none;
+    row-gap: 20px;
+}
+
+.student-register,
+.counsellor-register{
+    display: grid;
+    row-gap: 20px;
+}
+
+input{
+    /* width: 70%; */
+    height: 30px;
+    border-radius: 5px;
+    border-width: 0px;
+    background-color: rgb(184, 155, 210);
+}
+
+button{
+    width: 80%;
+    height: 30px;
+    border-radius: 5px;
+    border-width: 0px;
+    background-color: blueviolet;
+}

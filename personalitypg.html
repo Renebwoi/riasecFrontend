@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Personality Test</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="personalitypg.css">
+    </head>
+    <body>
+        <header> 
+            <p>Home</p>
+            <p>About</p>
+            <p>Logout</p>
+        </header>
+        <main>
+            <div class="questionBox">
+                <p class="question">Sample Question</p>
+
+                <div class="button-holder">
+                    <input type="button" value="Yes" onclick="answer(1)" class="answerbutton" id="firstanswer" placeholder="Yes">
+                    <input type="button" value="No" onclick="answer(0)" class="answerbutton" id="secondanswer" placeholder="No">
+                </div>
+
+                <p class="count">Question 1 of 60</p>
+            </div>
+
+            <div class="uploadBox">
+                <p class="uploadmessage">Upload Your Waec Results</p>
+
+                <label for="subject1name">Subject 1</label>
+                <input type="text" name="subject1name" title="subject1name" id="subject1name">
+                <label for="subject1number">Score</label>
+                <input type="text" name="subject1number" id="subject1number">
+
+                <label for="subject2name">Subject 2</label>
+                <input type="text" name="subject2name" title="subject2name" id="subject2name">
+                <label for="subject2number">Score</label>
+                <input type="text" name="subject2number" id="subject2number">
+
+                <label for="subject3name">Subject 3</label>
+                <input type="text" name="subject3name" title="subject3name" id="subject3name">
+                <label for="subject3number">Score</label>
+                <input type="text" name="subject3number" id="subject3number">
+
+                <label for="subject4name">Subject 4</label>
+                <input type="text" name="subject4name" title="subject4name" id="subject4name">
+                <label for="subject4number">Score</label>
+                <input type="text" name="subject4number" id="subject4number">
+
+                <label for="subject5name">Subject 5</label>
+                <input type="text" name="subject5name" title="subject5name" id="subject5name">
+                <label for="subject5number">Score</label>
+                <input type="text" name="subject5number" id="subject5number">
+
+                <label for="subject6name">Subject 6</label>
+                <input type="text" name="subject6name" title="subject6name" id="subject6name">
+                <label for="subject6number">Score</label>
+                <input type="text" name="subject6number" id="subject6number">
+
+                <label for="subject7name">Subject 7</label>
+                <input type="text" name="subject7name" title="subject7name" id="subject7name">
+                <label for="subject7number">Score</label>
+                <input type="text" name="subject7number" id="subject7number">
+
+                <label for="subject8name">Subject 8</label>
+                <input type="text" name="subject8name" title="subject8name" id="subject8name">
+                <label for="subject8number">Score</label>
+                <input type="text" name="subject8number" id="subject8number">
+
+                <label for="subject9name">Subject 9</label>
+                <input type="text" name="subject9name" title="subject9name" id="subject9name">
+                <label for="subject9number">Score</label>
+                <input type="text" name="subject9number" id="subject9number">
+
+                <button type="button" onclick="showResult()">Submit Result</button>
+            </div>
+
+            <div class="resultBox">
+                <p>Your result is </p>
+            </div>
+        </main>
+
+        
+        <script src="personalitypg.js" async defer></script>
+    </body>
+</html>
