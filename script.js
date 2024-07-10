@@ -42,7 +42,7 @@ function registerStudent() {
     console.log(register)
     alert(register)
 
-    window.location.href = "/personalitypg.html";
+    window.location.href = "./personalitypg.html";
 
 }
 
