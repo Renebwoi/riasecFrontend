@@ -292,7 +292,26 @@ else if (counter>=59){
 
     console.log(topThreeLetters);
     document.querySelector('.resultBox').innerHTML += `<p> Your Holland code is <b>${topThreeLetters}</b>.</p>`
+    document.querySelector('.resultBox').innerHTML += `<p> Based on your data provided, your eligible jobs are: </p>`
 
+    // add the jobs to the result
+    for (let i = 0;i<jobdata.length;i++){
+      // console.log(i)
+      var str = topThreeLetters;
+      var match = jobdata[i].InterestCode;
+      var bool = true; 
+
+      for (var prop of str) {
+        if (str.length !== match.length || match.indexOf(prop) === -1) {
+        bool = false; break;
+        }
+      };
+    // console.log(bool); // false
+
+      if (bool){
+        document.querySelector('.resultBox').innerHTML += `<p><.> ${jobdata[i].InterestCode}</b> : ${jobdata[i].Occupation}.</p>`
+      }
+    }
 
 }
 }
