@@ -34,8 +34,8 @@
                             <label for="">Password</label>
                             <input type="password" name="password" title="password" id="login-password">
             
-                            <button type="button" class="login-student" onclick="registerStudent()">Login as Student</button>
-                            <button type="button" class="login-counsellor" onclick="registerStudent()">Login as Counsellor</button>
+                            <button type="button" class="login-student" onclick="registerStudent(1)">Login as Student</button>
+                            <button type="button" class="login-counsellor" onclick="registerStudent(1)">Login as Counsellor</button>
             
                         </div>
                         <div class="register">
@@ -60,7 +60,7 @@
                                 <label for="student-schoolname">Schoolname</label>
                                 <input type="text" name="student-schoolname" title="student-schoolname" id="student-register-schoolname">
             
-                                <button type="button" class="register-student-done" onclick="registerStudent()">Register</button>
+                                <button type="button" class="register-student-done" onclick="registerStudent(2)">Register</button>
                             </div>
             
                             <div class="counsellor-register">
@@ -78,7 +78,7 @@
             
                                 <label for="counsellor-years-of-experience">Years of experience</label>
                                 <input type="number" name="counsellor-years-of-experience" title="counsellor-years-of-experience" id="counsellor-experience">
-                                <button type="button" class="register-counsellor-done" onclick="registerStudent()">Register</button>
+                                <button type="button" class="register-counsellor-done" onclick="registerStudent(2)">Register</button>
                             </div>
             
                         </div>

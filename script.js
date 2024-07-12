@@ -1,14 +1,14 @@
-function postData(url, data) {
-    // const response = await fetch(url, {
-    //     method: "POST",
-    //     headers: {
-    //         "Content-Type": "application/json",
-    //     },
-    //     body: JSON.stringify(data),
-    // });
-    // const result = await response.text();
+async function postData(url, data) {
+    const response = await fetch(url, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+    });
+    const result = await response.text();
     // console.log(result);
-    return "User Logged in"
+    return result
 }
 
 // Usage
@@ -17,7 +17,7 @@ function postData(url, data) {
 // postData(postDataUrl, payload);
 
 
-function registerStudent() {
+async function registerStudent(value) {
     username = document.querySelector('#student-register-name').value
     // console.log(username)
     password = document.querySelector('#student-register-password').value
@@ -26,24 +26,39 @@ function registerStudent() {
     age = document.querySelector('#student-register-age').value
     schoolname = document.querySelector('#student-register-schoolname').value
 
+    usernamelogs = document.querySelector('#login-name').value
+    passwordlogs = document.querySelector('#login-password').value
+if (value==2||"2"){
+    if (username && password && fullname && email && age ){
+
+console.log("hello")
     // create a fetch statement to the backend to add this values as a new student user in the student database
     // then display the login field
 
-    const postDataUrl = "http://127.0.0.1:5000/registerstudent1";
-    const payload = { 
-        "username": "gad",
-        "password":"gade",
-        "fullname":"gado",
-        "email":"gado@gmail.com",
-        "age":13,
-        "schoolname":"UNN"
-     };
-    let register = postData(postDataUrl, payload);
-    console.log(register)
-    alert(register)
+    // const postDataUrl = "http://localhost:3002/api/post";
+    // const payload = { 
+    //     "username": username,
+    //     "password":password,
+    //     "fullname": fullname,
+    //     "email": email,
+    //     "age": age,
+    //     "schoolname": schoolname
+    //  };
+    // let register = await postData(postDataUrl, payload);
+    // console.log(register)
+    alert("User Registered Successfully")
 
-    window.location.href = "/personalitypg.html";
+      window.location.href = "/personalitypg.html";
+    }
+  }
+if (value==1||"1"){
+  if (usernamelogs && passwordlogs) {
+    // check user accout existence
+    alert("User Logged In Successfully")
 
+      window.location.href = "/personalitypg.html";
+  }
+}
 }
 
 let methodbox = document.querySelector('.method')
