@@ -48,15 +48,9 @@ console.log("hello")
     // console.log(register)
     alert("User Registered Successfully")
 
-      window.location.href = "/personalitypg.html";
-    }
-  }
-if (value==1||"1"){
-  if (usernamelogs && passwordlogs) {
-    // check user accout existence
-    alert("User Logged In Successfully")
+    window.location.href = "./personalitypg.html";
 
-      window.location.href = "/personalitypg.html";
+      // window.location.href = "/personalitypg.html";
   }
 }
 }
