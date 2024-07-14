@@ -61,6 +61,12 @@ let loginbox = document.querySelector('.login')
 let register_select = document.querySelector('.register-select')
 let registerbox = document.querySelector('.register')
 
+let methodbox2 = document.querySelector('.register-method')
+let student_select = document.querySelector('.student-register-method')
+let studentbox = document.querySelector('.student-register')
+let counselling_select = document.querySelector('.counsellor-register-method')
+let counsellorbox = document.querySelector('.counsellor-register')
+
 login_select.addEventListener('click', function() {
   this.style.backgroundColor = 'yellow'; // Change to the desired color
   loginbox.style.display = "grid";
@@ -73,13 +79,10 @@ register_select.addEventListener('click', function() {
   loginbox.style.display = "none";
   registerbox.style.display = "grid"
   methodbox.style.display = 'none';
+  counsellorbox.style.display = "none"
 });
 
-let methodbox2 = document.querySelector('.register-method')
-let student_select = document.querySelector('.student-register-method')
-let studentbox = document.querySelector('.student-register')
-let counselling_select = document.querySelector('.counsellor-register-method')
-let counsellorbox = document.querySelector('.counsellor-register')
+
 
 student_select.addEventListener('click', function() {
   // this.style.backgroundColor = 'yellow'; // Change to the desired color

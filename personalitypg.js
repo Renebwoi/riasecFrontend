@@ -268,52 +268,52 @@ let scorearray = {
 
 function answer(value) {
 
-if (counter<59) {
-scorearray[riasecQuestions[counter].category] += Number(value)
-console.log(riasecQuestions[counter].category, scorearray[riasecQuestions[counter].category])
+  if (counter<59) {
+  scorearray[riasecQuestions[counter].category] += Number(value)
+  console.log(riasecQuestions[counter].category, scorearray[riasecQuestions[counter].category])
 
-counter++
-question.textContent = riasecQuestions[counter].question
-document.querySelector('.count').textContent = `Question ${counter+1} of 60`
+  counter++
+  question.textContent = riasecQuestions[counter].question
+  document.querySelector('.count').textContent = `Question ${counter+1} of 60`
 
-}
-else if (counter>=59){
-    document.querySelector('.questionBox').style.display = "none"
-    // document.querySelector('.resultBox').style.display = "flex"
-    document.querySelector('.uploadBox').style.display = "grid"
+  }
+  else if (counter>=59){
+      document.querySelector('.questionBox').style.display = "none"
+      // document.querySelector('.resultBox').style.display = "flex"
+      document.querySelector('.uploadBox').style.display = "grid"
 
-    document.querySelector('.resultBox').innerHTML = `<p>Your result is: Realistic ${scorearray['Realistic']}, Investigative ${scorearray['Investigative']}, Artistic ${scorearray['Artistic']}, Social ${scorearray['Social']}, Enterprising ${scorearray['Enterprising']}, Conventional ${scorearray['Conventional']}</p>`
+      document.querySelector('.resultBox').innerHTML = `<p>Your result is: Realistic ${scorearray['Realistic']}, Investigative ${scorearray['Investigative']}, Artistic ${scorearray['Artistic']}, Social ${scorearray['Social']}, Enterprising ${scorearray['Enterprising']}, Conventional ${scorearray['Conventional']}</p>`
 
-    // Convert the object to an array of [key, value] pairs
-    let sortedArray = Object.entries(scorearray).sort((a, b) => b[1] - a[1]);
+      // Convert the object to an array of [key, value] pairs
+      let sortedArray = Object.entries(scorearray).sort((a, b) => b[1] - a[1]);
 
-    // Extract the first letter of the highest three keys and create a single string in uppercase
-    let topThreeLetters = sortedArray.slice(0, 3).map(item => item[0][0]).join('').toUpperCase();
+      // Extract the first letter of the highest three keys and create a single string in uppercase
+      let topThreeLetters = sortedArray.slice(0, 3).map(item => item[0][0]).join('').toUpperCase();
 
-    console.log(topThreeLetters);
-    document.querySelector('.resultBox').innerHTML += `<p> Your Holland code is <b>${topThreeLetters}</b>.</p>`
-    document.querySelector('.resultBox').innerHTML += `<p> Based on your data provided, your eligible jobs are: </p>`
+      console.log(topThreeLetters);
+      document.querySelector('.resultBox').innerHTML += `<p> Your Holland code is <b>${topThreeLetters}</b>.</p>`
+      document.querySelector('.resultBox').innerHTML += `<p> Based on your data provided, your eligible jobs are: </p>`
 
-    // add the jobs to the result
-    for (let i = 0;i<jobdata.length;i++){
-      // console.log(i)
-      var str = topThreeLetters;
-      var match = jobdata[i].InterestCode;
-      var bool = true; 
+      // add the jobs to the result
+      for (let i = 0;i<jobdata.length;i++){
+        // console.log(i)
+        var str = topThreeLetters;
+        var match = jobdata[i].InterestCode;
+        var bool = true; 
 
-      for (var prop of str) {
-        if (str.length !== match.length || match.indexOf(prop) === -1) {
-        bool = false; break;
+        for (var prop of str) {
+          if (str.length !== match.length || match.indexOf(prop) === -1) {
+          bool = false; break;
+          }
+        };
+        // console.log(bool); // false
+
+        if (bool){
+          document.querySelector('.resultBox').innerHTML += `<p><.> ${jobdata[i].InterestCode}</b> : ${jobdata[i].Occupation}.</p>`
         }
-      };
-    // console.log(bool); // false
-
-      if (bool){
-        document.querySelector('.resultBox').innerHTML += `<p><.> ${jobdata[i].InterestCode}</b> : ${jobdata[i].Occupation}.</p>`
       }
-    }
 
-}
+  }
 }
 
 function areAllCharactersPresent(str1, str2) {
