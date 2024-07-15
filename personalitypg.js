@@ -309,7 +309,7 @@ function answer(value) {
         // console.log(bool); // false
 
         if (bool){
-          document.querySelector('.resultBox').innerHTML += `<p><.> ${jobdata[i].InterestCode}</b> : ${jobdata[i].Occupation}.</p>`
+          document.querySelector('.resultBox').innerHTML += `<p><b> ${jobdata[i].InterestCode}</b> : ${jobdata[i].Occupation}.</p>`
         }
       }
 

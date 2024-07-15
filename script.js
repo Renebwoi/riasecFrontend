@@ -55,6 +55,8 @@ console.log("hello")
 }
 }
 
+
+
 let methodbox = document.querySelector('.method')
 let login_select = document.querySelector('.login-select')
 let loginbox = document.querySelector('.login')

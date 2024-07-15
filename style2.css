@@ -114,3 +114,35 @@ button{
     background-color: blueviolet;
 }
 
+
+
+/* for mobile */
+@media screen and (max-width: 480px) {
+    /* body {
+      background-color: lightgreen;
+    } */
+
+    .main2{
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+
+    .section{
+        width: 100%;
+    }
+
+    .info{
+        margin: 100px 0;
+    }
+
+    .signpage{
+        overflow-y: visible;
+    }
+
+    .login-student,
+    .login-counsellor,
+    .register-student-done,
+    .register-counsellor-done{
+        margin: auto;
+    }
+}
