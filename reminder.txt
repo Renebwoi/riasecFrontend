@@ -1,0 +1,8 @@
+next plan is to add a button for when the student wants a counsellor.
+it will link to another SECTION where he can select the counsellor he/she wants
+
+once the button for a counsellor is clicked, it will redirect the user to the cousellor's whatsapp number while at the same registering the students under the counsellor's to be attended to database.
+
+next 
+the request counsellor page will fetch all counsellor name, phone number and id from counsellor database and display it to the student for him to pick
+the it will be registered in the counsellor pupuils database from where the counsellor will know which are his pupils and for each pupil, data will be fetched for that pupil from the student database

@@ -61,7 +61,7 @@ const riasecQuestions = [
     { question: "Do you like performing routine tasks?", category: "Conventional" }
   ];
 
-  const jobdata = [
+const jobdata = [
     { "InterestCode": "CSR", "Occupation": "Amusement and Recreation Attendants", "CodeLevel": 3, "ID": 1 },
     { "InterestCode": "RC", "Occupation": "Agricultural Equipment Operators", "CodeLevel": 2, "ID": 2 },
     { "InterestCode": "RCS", "Occupation": "Baristas", "CodeLevel": 3, "ID": 3 },
@@ -252,6 +252,18 @@ const riasecQuestions = [
     { "InterestCode": "SEC", "Occupation": "Property, Real Estate, and Community Association Managers", "CodeLevel": 3, "ID": 1000 }
   ];
   
+const loginCookie = getCookie("loginCookie")
+
+// if there is no loginCookie - validate user login
+if (!loginCookie) {
+  console.log("cookie is: ", loginCookie )
+  document.body.innerHTML = `
+      <div class="error-container">
+          <h1>404</h1>
+          <p>Page Not Found</p>
+      </div>
+  `;
+}
 
 let question = document.querySelector('.question')
 question.textContent = riasecQuestions[0].question
@@ -266,7 +278,7 @@ let scorearray = {
                         "Conventional": 0
                         }
 
-function answer(value) {
+async function answer(value) {
 
   if (counter<59) {
   scorearray[riasecQuestions[counter].category] += Number(value)
@@ -283,16 +295,17 @@ function answer(value) {
       document.querySelector('.uploadBox').style.display = "grid"
 
       document.querySelector('.resultBox').innerHTML = `<p>Your result is: Realistic ${scorearray['Realistic']}, Investigative ${scorearray['Investigative']}, Artistic ${scorearray['Artistic']}, Social ${scorearray['Social']}, Enterprising ${scorearray['Enterprising']}, Conventional ${scorearray['Conventional']}</p>`
-
+    
       // Convert the object to an array of [key, value] pairs
       let sortedArray = Object.entries(scorearray).sort((a, b) => b[1] - a[1]);
 
       // Extract the first letter of the highest three keys and create a single string in uppercase
-      let topThreeLetters = sortedArray.slice(0, 3).map(item => item[0][0]).join('').toUpperCase();
+      topThreeLetters = sortedArray.slice(0, 3).map(item => item[0][0]).join('').toUpperCase();
 
       console.log(topThreeLetters);
       document.querySelector('.resultBox').innerHTML += `<p> Your Holland code is <b>${topThreeLetters}</b>.</p>`
       document.querySelector('.resultBox').innerHTML += `<p> Based on your data provided, your eligible jobs are: </p>`
+        
 
       // add the jobs to the result
       for (let i = 0;i<jobdata.length;i++){
@@ -310,10 +323,18 @@ function answer(value) {
 
         if (bool){
           document.querySelector('.resultBox').innerHTML += `<p><b> ${jobdata[i].InterestCode}</b> : ${jobdata[i].Occupation}.</p>`
+        // make the post statement to upload the job results here
+        // the job results are in a for loop and is jobdata[i].Occupation
+      
+        
+          
+      // return result
         }
       }
 
   }
+
+  
 }
 
 function areAllCharactersPresent(str1, str2) {
@@ -338,7 +359,123 @@ function areAllCharactersPresent(str1, str2) {
   }
 
 
-function showResult(){
+async function showResult(){
     document.querySelector('.resultBox').style.display = "flex"
     document.querySelector('.uploadBox').style.display = "none"
+    // SUBMIT WAEC RESULTS HERE
+    // make the post statement to upload the test scores and riasec code here
+        // the test scores are like scorearray["Realistic"] and so on while the riasec code is topThreeLetters
+
+        // use the cookie to make a post request to get the the matching username and student id. Then use those details to make the desired post request
+
+        const urll = `http://localhost:3003/api/cookiegetOne/${loginCookie}`
+          const response = await fetch(urll);
+          const result = await response.json();
+          console.log("data is: ",result);
+
+          // testResult is the combination of all the necessary student test info relevant to the counsellor in the correct json order as the schema
+          // it must be in this format:
+          // NEXT CHANGE; SUBMIT WAEC RESULTS AFTER SUBMIT RESULTS IS CLICKED 
+
+          const testResult = {
+            studentname: result.username,
+            studentID: result.id,
+           riasecScore: {
+               realistic: scorearray["Realistic"],
+               investigative: scorearray["Investigative"],
+               artistic: scorearray["Artistic"],
+               social: scorearray["Social"],
+               enterprising: scorearray["Enterprising"],
+               conventional: scorearray["Conventional"]
+           },
+           riasecCode: topThreeLetters,
+           waecResults: {
+               subject1:{
+                   subjectName: document.getElementById("subject1name").value,
+                   subjectScore: document.getElementById("subject1number").value
+               },
+               subject2:{
+                subjectName: document.getElementById("subject2name").value,
+                subjectScore: document.getElementById("subject2number").value
+               },
+               subject3:{
+                subjectName: document.getElementById("subject3name").value,
+                subjectScore: document.getElementById("subject3number").value
+               },
+               subject4:{
+                subjectName: document.getElementById("subject4name").value,
+                subjectScore: document.getElementById("subject4number").value
+               },
+               subject5:{
+                subjectName: document.getElementById("subject5name").value,
+                subjectScore: document.getElementById("subject5number").value
+               },
+               subject6:{
+                subjectName: document.getElementById("subject6name").value,
+                subjectScore: document.getElementById("subject6number").value
+               },
+               subject7:{
+                subjectName: document.getElementById("subject7name").value,
+                subjectScore: document.getElementById("subject7number").value
+               },
+               subject8:{
+                subjectName: document.getElementById("subject8name").value,
+                subjectScore: document.getElementById("subject8number").value
+               },
+               subject9:{
+                subjectName: document.getElementById("subject9name").value,
+                subjectScore: document.getElementById("subject9number").value
+               }
+           }
+        }
+
+
+          const postDetails = postData(`http://localhost:3003/api/postcode`, testResult)
+          document.querySelector('.resultBox').innerHTML += `<a href="/reqcousellor/requestcounsellor.html"> Need A Counselor? </a>`
+
+          console.log("testResult iss: ", testResult, "and post details: ", postDetails)
+
+}
+
+
+// COOKIES
+//CREATE COOKIE 
+// cname - cookie name, cvalue - cookie value, exdays - no of days till expiry
+
+function setCookie(cname, cvalue, exdays) {
+  const d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  let expires = "expires="+ d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";";
+}
+
+// GETTING THE COOKIE
+function getCookie(cname) {
+  let name = cname + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let ca = decodedCookie.split(';');
+  for(let i = 0; i <ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+// POST REQUEST
+async function postData(url, data) {
+  const response = await fetch(url, {
+      method: "POST",
+      headers: {
+          "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+  });
+  const result = await response.text();
+  // console.log(result);
+  return result
 }

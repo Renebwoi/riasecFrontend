@@ -72,5 +72,6 @@ main{
     display: none;
     width: 100%;
     row-gap: 20px;
+    background-color: blueviolet;
 }
 
