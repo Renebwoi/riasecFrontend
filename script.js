@@ -20,7 +20,7 @@ console.log("hello")
     // create a fetch statement to the backend to add this values as a new student user in the student database
     // then display the login field
 
-    const postDataUrl = "http://localhost:3003/api/post";
+    const postDataUrl = "https://riasecnode.onrender.com/api/post";
     const payload = { 
         "username": username,
         "password":password,
@@ -43,7 +43,7 @@ if (value==1){//1 means login for student
     let passwordlogs = document.querySelector('#login-password').value
       if (usernamelogs && passwordlogs ){
       //login student
-      const fetchDataUrl = "http://localhost:3003/api/loginstudent";
+      const fetchDataUrl = "https://riasecnode.onrender.com/api/loginstudent";
       loginData = {
         "username" : usernamelogs,
         "password" : passwordlogs
@@ -71,7 +71,7 @@ if (value==3){
   let passwordlogs = document.querySelector('#login-password').value
   if (usernamelogs && passwordlogs ){
     //login counsellor
-    const fetchDataUrl = "http://localhost:3003/api/logincounsellor";
+    const fetchDataUrl = "https://riasecnode.onrender.com/api/logincounsellor";
       loginData = {
         "username" : usernamelogs,
         "password" : passwordlogs
@@ -101,7 +101,7 @@ if (value==4){//4 means register for counsellor
   // create a fetch statement to the backend to add these values as a new counsellor user in the counsellor database
   // then display the login field
 
-  const postDataUrl = "http://localhost:3003/api/postcounsellor";
+  const postDataUrl = "https://riasecnode.onrender.com/api/postcounsellor";
   const payload = { 
       "username": cname,
       "password":cpassword,

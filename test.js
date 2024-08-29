@@ -15,50 +15,69 @@
 // };
 // console.log(bool); // false
 
-const data = [
-  {
+// const data = [
+//   {
    
-    id: 1,
-    username: 'Kala',
-    email: 'kala@renz.com',
-    specialization: 'Medicine',
-    yearsOfExperience: 5,
-    usercookie: 'None',
-    __v: 0,
-    password: 'mospat',
-    phoneno: 9122334455
-  },
-  {
+//     id: 1,
+//     username: 'Kala',
+//     email: 'kala@renz.com',
+//     specialization: 'Medicine',
+//     yearsOfExperience: 5,
+//     usercookie: 'None',
+//     __v: 0,
+//     password: 'mospat',
+//     phoneno: 9122334455
+//   },
+//   {
     
-    id: 2,
-    username: 'Mumbo',
-    email: 'mumbo@gmail.com',
-    specialization: 'Sports',
-    yearsOfExperience: 6,
-    usercookie: '2596psvgqk',
-    __v: 0,
-    password: 'mumbazi',
-    phoneno: 9134235678
-  },
-  {
+//     id: 2,
+//     username: 'Mumbo',
+//     email: 'mumbo@gmail.com',
+//     specialization: 'Sports',
+//     yearsOfExperience: 6,
+//     usercookie: '2596psvgqk',
+//     __v: 0,
+//     password: 'mumbazi',
+//     phoneno: 9134235678
+//   },
+//   {
     
-    id: 3,
-    username: 'Mumba',
-    password: 'Helloguys',
-    email: 'mumba@gmail.com',
-    specialization: 'Dietetics',
-    yearsOfExperience: 9,
-    usercookie: 'qj1nnidzhz',
-    __v: 0,
-    phoneno: 8036782459
-  }
-];
+//     id: 3,
+//     username: 'Mumba',
+//     password: 'Helloguys',
+//     email: 'mumba@gmail.com',
+//     specialization: 'Dietetics',
+//     yearsOfExperience: 9,
+//     usercookie: 'qj1nnidzhz',
+//     __v: 0,
+//     phoneno: 8036782459
+//   }
+// ];
 
-data.forEach(obj => {
+// data.forEach(obj => {
   
-  delete obj.password;
-  delete obj.usercookie;
-  delete obj.__v;
-});
+//   delete obj.password;
+//   delete obj.usercookie;
+//   delete obj.__v;
+// });
 
-console.log(data);
+// console.log(data);
+
+// https://riasecnode.onrender.com
+// http://localhost:3003
+
+let url = "https://riasecnode.onrender.com/api/getAllCounsellors"
+
+// normal fetch request
+async function fetchData(url) {
+  const response = await fetch(url);
+  const result = await response.json();
+  // console.log(result);
+  return result
+}
+
+async function main() {
+const counsellors = await fetchData(url) 
+ console.log("the counsellor details are: ", counsellors)
+}
+main()

@@ -368,7 +368,7 @@ async function showResult(){
 
         // use the cookie to make a post request to get the the matching username and student id. Then use those details to make the desired post request
 
-        const urll = `http://localhost:3003/api/cookiegetOne/${loginCookie}`
+        const urll = `https://riasecnode.onrender.com/api/cookiegetOne/${loginCookie}`
           const response = await fetch(urll);
           const result = await response.json();
           console.log("data is: ",result);
@@ -430,7 +430,7 @@ async function showResult(){
         }
 
 
-          const postDetails = postData(`http://localhost:3003/api/postcode`, testResult)
+          const postDetails = postData(`https://riasecnode.onrender.com/api/postcode`, testResult)
           document.querySelector('.resultBox').innerHTML += `<a href="/reqcousellor/requestcounsellor.html"> Need A Counselor? </a>`
 
           console.log("testResult iss: ", testResult, "and post details: ", postDetails)

@@ -25,7 +25,7 @@
 // async function hello(){
 
 //     try {
-//         const response = await fetch('http://localhost:3003/api/getOne/3')
+//         const response = await fetch('https://riasecnode.onrender.com/api/getOne/3')
 
 //         if (!response.ok) {
 //             throw new Error('Network response was not ok');
@@ -43,7 +43,7 @@
 async function main(){
 
     try {
-        const response = await fetch('http://localhost:3003/api/getOne/3')
+        const response = await fetch('https://riasecnode.onrender.com/api/getOne/3')
 
         if (!response.ok) {
             throw new Error('Network response was not ok');

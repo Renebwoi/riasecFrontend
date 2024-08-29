@@ -32,7 +32,7 @@ function getCookie(cname) {
 
 async function main() {
   let counsellorbox= document.querySelector('.counsellorbox');
-  let url = "http://localhost:3003/api/getAllCounsellors"
+  let url = "https://riasecnode.onrender.com/api/getAllCounsellors"
  const counsellors = await fetchData(url) 
  console.log("the counsellor details are: ", counsellors)
 
@@ -62,7 +62,7 @@ async function fetchData(url) {
 }
 
 async function selectcounsellor(num,name) {
-  let url = "http://localhost:3003/api/getStudentData/" + loginCookie;
+  let url = "https://riasecnode.onrender.com/api/getStudentData/" + loginCookie;
   let studentData = await fetchData(url)
   let counsellorName = name;
   let counsellorid = num;
@@ -75,7 +75,7 @@ async function selectcounsellor(num,name) {
     counsellorname: counsellorName,
     counsellorid: counsellorid,
   }
-  let mainurl = "http://localhost:3003/api/postpupilrequest"
+  let mainurl = "https://riasecnode.onrender.com/api/postpupilrequest"
   const postrequest = postData(mainurl,body)
   
   console.log("Data posted")
