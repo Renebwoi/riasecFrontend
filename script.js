@@ -229,3 +229,9 @@ function getCookie(cname) {
   }
   return "";
 }
+
+// CLEARING COOKIE
+function clearCookie() {
+  // Set the cookie with the same name, a blank value, and an expiration date in the past
+  document.cookie = loginCookie + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+}

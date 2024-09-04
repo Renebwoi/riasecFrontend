@@ -479,3 +479,71 @@ async function postData(url, data) {
   // console.log(result);
   return result
 }
+
+
+let firstsubject = document.getElementById("subject1name")
+let secondsubject = document.getElementById("subject2name")
+let thirdsubject = document.getElementById("subject3name")
+let fourthsubject = document.getElementById("subject4name")
+let fifthsubject = document.getElementById("subject5name")
+let sixthsubject = document.getElementById("subject6name")
+let seventhsubject = document.getElementById("subject7name")
+let eightsubject = document.getElementById("subject8name")
+let ninthsubject = document.getElementById("subject9name")
+
+function checksimilar(changedElement) {
+  // Get all select elements with the class "subject-select"
+  const selects = document.querySelectorAll('.subject-select');
+  
+  // Get the value of the changed select element
+  const selectedValue = changedElement.value;
+  
+  // Only check if the selected value is not "nosubject"
+  if (selectedValue !== "nosubject") {
+      // Loop through all relevant select elements
+      for (let i = 0; i < selects.length; i++) {
+          const currentSelect = selects[i];
+          
+          // Skip the current changed element in comparison
+          if (currentSelect !== changedElement && currentSelect.value === selectedValue) {
+              // Alert the user
+              alert("No two subjects can be the same.");
+              
+              // Reset the value of the changed element to "nosubject"
+              changedElement.value = "nosubject";
+              
+              // Exit the function
+              return;
+          }
+      }
+  }
+}
+
+
+function checkSubjects() {
+  // Get all select elements with the class "subject-select"
+  const selects = document.querySelectorAll('.subject-select');
+  
+  // Loop through all relevant select elements
+  for (let i = 0; i < selects.length; i++) {
+      const currentSelect = selects[i];
+      
+      // Check if the current select has the value "nosubject"
+      if (currentSelect.value === "nosubject") {
+          // Alert the user
+          alert("A subject is missing. Please complete your details.");
+          
+          // Exit the function to prevent further execution
+          return;
+      }
+  }
+  
+  // If no "nosubject" values are found, call the showResult() function
+  showResult();
+}
+
+// CLEARING COOKIE
+function clearCookie() {
+  // Set the cookie with the same name, a blank value, and an expiration date in the past
+  document.cookie = loginCookie + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+}

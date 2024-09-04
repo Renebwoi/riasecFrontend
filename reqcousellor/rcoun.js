@@ -44,7 +44,7 @@ async function main() {
                                               <p>Specialization: ${element.specialization} </p>
                                               <p>Phonenumber: ${element.phoneno} </p>
                                               <p>Years of Experience: ${element.yearsOfExperience} </p>
-                                              <buton type="button" onclick="selectcounsellor(${element.id},'${element.username}')" id="select${element.id}" class="selectbuttons"> Select Counsellor </button>
+                                              <buton type="button" onclick="selectcounsellor(${element.id},'${element.username}');setCookie('user','student',1);setCookie('counsellorname','${element.username}',1);setCookie('counsellorid','${element.id}',1);moveChat() " id="select${element.id}" class="selectbuttons"> Select Counsellor </button>
                                               <br>
                                               </div>`
  });
@@ -92,4 +92,23 @@ async function postData(url, data) {
   const result = await response.text();
   // console.log(result);
   return result
+}
+
+// CLEARING COOKIE
+function clearCookie() {
+  // Set the cookie with the same name, a blank value, and an expiration date in the past
+  document.cookie = loginCookie + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+}
+
+// SETTING COOKIE
+function setCookie(cname, cvalue, exdays) {
+  const d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  let expires = "expires="+ d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";" + "path=/;";
+}
+
+function moveChat(){
+  window.location.href = "../infochatpage.html";
+  // console.log("move chat")
 }

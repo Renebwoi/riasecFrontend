@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", "sans-serif";
+    }
+html{
+    height: 100vh;
+}
+
+header{
+    position: fixed;
+    width: 100svw;
+    height: 10svh;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: larger;
+    font-weight: 700;
+}
+
+body{
+    display:grid;
+    place-content: center;
+    background-color: whitesmoke;
+    background-image: url('../op2.jpg');
+    height: 100%;
+}
+
+main{
+    width: 90svw;
+    height: 85svh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* border-radius: 30px; */
+    margin-top: 50px;
+}
+.questionBox{
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+.studentInfobox {
+    display: flex;
+    justify-content: space-around;
+}
+.studentInfobox h3{
+    font-size: x-large;
+}
+.studentInfobox p{
+    font-size: larger;
+}
+
+.typebox{
+    width: 100%;
+    min-height: 50px;
+    display:flex;
+    justify-content: space-between;
+}
+#textinputbox{
+    width: 100%;
+    height: 100%;
+}
+.sendButton{
+    padding: 20px;
+}

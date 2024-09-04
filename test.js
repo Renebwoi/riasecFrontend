@@ -66,18 +66,20 @@
 // https://riasecnode.onrender.com
 // http://localhost:3003
 
-let url = "https://riasecnode.onrender.com/api/getAllCounsellors"
+// let url = "https://riasecnode.onrender.com/api/getAllCounsellors"
 
-// normal fetch request
-async function fetchData(url) {
-  const response = await fetch(url);
-  const result = await response.json();
-  // console.log(result);
-  return result
-}
+// // normal fetch request
+// async function fetchData(url) {
+//   const response = await fetch(url);
+//   const result = await response.json();
+//   // console.log(result);
+//   return result
+// }
 
-async function main() {
-const counsellors = await fetchData(url) 
- console.log("the counsellor details are: ", counsellors)
-}
-main()
+// async function main() {
+// const counsellors = await fetchData(url) 
+//  console.log("the counsellor details are: ", counsellors)
+// }
+// main()
+
+console.log(Date.now())

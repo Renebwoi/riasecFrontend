@@ -10,9 +10,9 @@
     </head>
     <body>
         <header> 
-            <p>Home</p>
+            <a href="index.html">Home</a>
             <p>About</p>
-            <a href="index.html">Logout</a>
+            <a href="index.html" onclick="clearCookie()">Logout</a>
         </header>
         <main>
             <div class="questionBox">
@@ -30,7 +30,8 @@
                 <p class="uploadmessage">Upload Your Waec Results</p>
 
                 <label for="subject1name">Subject 1</label>
-                <select name="subject1name" id="subject1name">
+                <select name="subject1name" id="subject1name" onchange="checksimilar(this)" class="subject-select">
+                    <option value="nosubject">Select a subject</option>
                         <option value="Maths">Maths</option>
                         <option value="English">English</option>
                         <option value="Physics">Physics</option>
@@ -135,7 +136,7 @@
                         <option value="Yoruba">Yoruba</option>
                 </select>
                 <label for="subject1number">Score</label>
-                <select name="subject1number" id="subject1number">
+                <select name="subject1number" id="subject1number" >
                     <option value="A">A</option>
                     <option value="B">B</option>
                     <option value="C">C</option>
@@ -145,7 +146,8 @@
                 </select>
 
                 <label for="subject2name">Subject 2</label>
-                <select name="subject2name" id="subject2name">
+                <select name="subject2name" id="subject2name" onchange="checksimilar(this)" class="subject-select">
+                    <option value="nosubject">Select a subject</option>
                         <option value="Maths">Maths</option>
                         <option value="English">English</option>
                         <option value="Physics">Physics</option>
@@ -260,7 +262,8 @@
                 </select>
 
                 <label for="subject3name">Subject 3</label>
-                <select name="subject3name" id="subject3name">
+                <select name="subject3name" id="subject3name" onchange="checksimilar(this)" class="subject-select">
+                    <option value="nosubject">Select a subject</option>
                         <option value="Maths">Maths</option>
                         <option value="English">English</option>
                         <option value="Physics">Physics</option>
@@ -375,7 +378,8 @@
                 </select>
 
                 <label for="subject4name">Subject 4</label>
-                <select name="subject4name" id="subject4name">
+                <select name="subject4name" id="subject4name" onchange="checksimilar(this)" class="subject-select">
+                    <option value="nosubject">Select a subject</option>
                         <option value="Maths">Maths</option>
                         <option value="English">English</option>
                         <option value="Physics">Physics</option>
@@ -490,7 +494,8 @@
                 </select>
 
                 <label for="subject5name">Subject 5</label>
-                <select name="subject5name" id="subject5name">
+                <select name="subject5name" id="subject5name" onchange="checksimilar(this)" class="subject-select">
+                    <option value="nosubject">Select a subject</option>
                     <option value="Maths">Maths</option>
                     <option value="English">English</option>
                     <option value="Physics">Physics</option>
@@ -605,7 +610,8 @@
                 </select>
 
                 <label for="subject6name">Subject 6</label>
-                <select name="subject6name" id="subject6name">
+                <select name="subject6name" id="subject6name" onchange="checksimilar(this)" class="subject-select">
+                    <option value="nosubject">Select a subject</option>
                     <option value="Maths">Maths</option>
                     <option value="English">English</option>
                     <option value="Physics">Physics</option>
@@ -720,7 +726,8 @@
                 </select>
 
                 <label for="subject7name">Subject 7</label>
-                <select name="subject7name" id="subject7name">
+                <select name="subject7name" id="subject7name" onchange="checksimilar(this)" class="subject-select">
+                    <option value="nosubject">Select a subject</option>
                     <option value="Maths">Maths</option>
                     <option value="English">English</option>
                     <option value="Physics">Physics</option>
@@ -835,7 +842,8 @@
                 </select>
 
                 <label for="subject8name">Subject 8</label>
-                <select name="subject8name" id="subject8name">
+                <select name="subject8name" id="subject8name" onchange="checksimilar(this)" class="subject-select">
+                    <option value="nosubject">Select a subject</option>
                     <option value="Maths">Maths</option>
                     <option value="English">English</option>
                     <option value="Physics">Physics</option>
@@ -950,7 +958,8 @@
                 </select>
 
                 <label for="subject9name">Subject 9</label>
-                <select name="subject9name" id="subject9name">
+                <select name="subject9name" id="subject9name" onchange="checksimilar(this)" class="subject-select">
+                    <option value="nosubject">Select a subject</option>
                     <option value="Maths">Maths</option>
                     <option value="English">English</option>
                     <option value="Physics">Physics</option>
@@ -1064,7 +1073,7 @@
                     <option value="F">F</option>
                 </select>
 
-                <button type="button" onclick="showResult()">Submit Result</button>
+                <button type="button" onclick="checkSubjects()">Submit Result</button>
             </div>
 
             <div class="resultBox">
