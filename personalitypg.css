@@ -12,13 +12,18 @@ header{
     position: fixed;
     width: 100svw;
     height: 10svh;
-    background-color: white;
+    /* background-color: white; */
+    background-color: rgba(45, 255, 255, 0.904);
 
     display: flex;
     align-items: center;
     justify-content: space-around;
     font-size: larger;
     font-weight: 700;
+}
+header a{
+    text-decoration: none;
+    color: black;
 }
 
 body{
@@ -38,6 +43,7 @@ main{
     /* align-items: center; */
     border-radius: 30px;
     margin-top: 20px;
+    overflow-y: scroll;
 }
 .questionBox{
     padding: 30px;
@@ -64,10 +70,10 @@ main{
     display: none;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     font-size: larger;
 
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     row-gap: 20px;
 }
 .question{
@@ -89,8 +95,14 @@ main{
 button{
     border-radius: 20px;
     background-color: rgb(131, 24, 232);
-    height: 30px;
+    height: 40px;
     border-width: 0px;
+    width: 50%;
+    margin: 10px auto;
+
+    color: aliceblue;
+    font-size: larger;
+    font-weight: 700;
 }
 input{
     height: 30px;
@@ -108,7 +120,16 @@ input[type="button"]{
 }
 .uploadmessage{
     width: 40svw;
-    font-size: larger;
+    font-size: 2rem;
     font-weight: 700;
     text-align: center;
+}
+
+select.subject-select,
+select.subject-select-number{
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgba(45, 255, 255, 0.31);
+    border-width: 0px;
+    /* text-align: center; */
 }

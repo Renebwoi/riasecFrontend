@@ -4,15 +4,19 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Career Guidance</title>
-        <meta name="description" content="">
+        <meta name="description" content="Career Guidance for finding course of study">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="cglogo.png" type="image/icon type">
         <link rel="stylesheet" href="style2.css">
     </head>
     <body>
         <header> 
-            <a href="#">Home</a>
-            <p>About</p>
-            <a href="#" onclick="clearCookie()">Login</a>
+            <img src="careerguidelogo.png" alt="careerguidelogo" srcset="careerguidelogo.png" class="logo">
+            <div class="abox">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#" onclick="clearCookie()">Login</a>
+            </div>
         </header>
         
         <main>
@@ -34,8 +38,10 @@
                             <label for="">Password</label>
                             <input type="password" name="password" title="password" id="login-password">
             
-                            <button type="button" class="login-student" onclick="registerStudent(1)">Login as Student</button>
-                            <button type="button" class="login-counsellor" onclick="registerStudent(3)">Login as Counsellor</button>
+                            <section class="button-container">
+                                <button type="button" class="login-student" onclick="registerStudent(1)">Login as Student</button>
+                                <button type="button" class="login-counsellor" onclick="registerStudent(3)">Login as Counsellor</button>
+                            </section>
             
                         </div>
                         <div class="register">

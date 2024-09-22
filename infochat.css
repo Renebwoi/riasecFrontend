@@ -12,7 +12,8 @@ header{
     position: fixed;
     width: 100svw;
     height: 10svh;
-    background-color: white;
+    /* background-color: white; */
+    background-color: rgba(45, 255, 255, 0.9);
 
     display: flex;
     align-items: center;
@@ -41,12 +42,15 @@ main{
 }
 .questionBox{
     padding: 30px;
+    padding-bottom: 5px;
     width: 100%;
     display: flex;
     flex-direction: column;
     /* align-items: center; */
-    justify-content: center;
+    /* justify-content: center; */
     overflow-y: scroll;
+    position: relative;
+    background-color: #F5F5F5;
 }
 
 .studentInfobox {
@@ -60,16 +64,56 @@ main{
     font-size: larger;
 }
 
+.chatbox{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 .typebox{
     width: 100%;
     min-height: 50px;
     display:flex;
     justify-content: space-between;
+
+    position: sticky;
+    bottom: 0;
 }
 #textinputbox{
     width: 100%;
     height: 100%;
+    border-color: rgba(45, 255, 255, 0.7);
+    background-color: white;
+    border-radius: 4px;
+}
+#textinputbox::placeholder {
+    /* color: rgba(45, 255, 255, 0.7); */
+    /* text-align: center; */
+    padding-left: 8px;
 }
 .sendButton{
     padding: 20px;
+    background-color: #663399;
+    color: white;
+    /* font-weight: 700; */
+    font-size: larger;
+    border-width: 0px;
+    border-radius: 4px;
+}
+
+.msgBox{
+    background-color: rgba(45, 255, 255, 0.7);
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.studMsgBox{
+    position: relative;
+    margin-left: auto;
+}
+.counMsgBox{
+    margin-right: auto;
 }

@@ -4,9 +4,9 @@
     box-sizing: border-box;
     font-family: "poppins", "sans-serif";
     }
-html{
+/* html{
     height: 100vh;
-}
+} */
 
 body{
     display:flex;
@@ -15,29 +15,64 @@ body{
 
 header{
     width: 100svw;
-    height: 10svh;
+    height: 44px;
     background-color: white;
     /* background-image: linear-gradient(blueviolet,pink); */
 
     display: flex;
     align-items: center;
-    justify-content: space-around;
     font-size: larger;
     font-weight: 700;
+    gap: 40px;
+    justify-content: flex-start;
 }
-header a{
+.logo{
+    width: 150px;
+    height: 70%;
+    /* margin-right: 65svw; */
+}
+header .abox{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 600;
+    gap: 40px;
+    justify-content: flex-end;
+    padding-right: 40px;
+}
+header .abox a{
     all: unset;
+    position:relative;
+    color: #784BA0;
 }
+/* header a::after {
+    content: ' ';
+    width: 3px;
+    height: 150%;
+    background-color: #784BA0;
+    position: absolute;
+    margin-left: 8px;
+    border-radius: 2px;
+    top: -25%;
+} */
+/* header .abox a:last-child {
+    margin-right: 40px;
+} */
 
 main{
-    background-image: url('op2.jpg');
+    /* background-image: url('op2.jpg'); */
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
     width: 100svw;
-    height: 90svh;
+    height: 100svh;
     background-size: cover;
 
     display: grid;
     place-items: center;
 }
+
+
 .main2{
     height: 80svh;
     width: 90%;
@@ -107,11 +142,16 @@ input{
 }
 
 button{
-    width: 80%;
-    height: 30px;
+    width: 40%;
+    padding: 5px;
     border-radius: 5px;
     border-width: 0px;
     background-color: blueviolet;
+    color: white;
+}
+.button-container{
+    display: flex;
+    justify-content: space-around;
 }
 
 
@@ -121,6 +161,15 @@ button{
     /* body {
       background-color: lightgreen;
     } */
+
+header .abox{
+    width: 60%;
+}
+.logo{
+    clip-path: inset(0% 75% 0% 0%);
+    width: 100px;
+    height: 70%;
+}
 
     .main2{
         flex-direction: column;
@@ -146,3 +195,4 @@ button{
         margin: auto;
     }
 }
+
