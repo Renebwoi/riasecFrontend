@@ -38,12 +38,12 @@ async function main() {
 
 
  counsellors.forEach(element => {
-  counsellorbox.innerHTML += `<div class="counsbox"><p>Name: ${element.username}</p>
-                                              <p id="p${element.id}">ID: ${element.id} </p>
-                                              <p>Email: ${element.email} </p>
-                                              <p>Specialization: ${element.specialization} </p>
-                                              <p>Phonenumber: ${element.phoneno} </p>
-                                              <p>Years of Experience: ${element.yearsOfExperience} </p>
+  counsellorbox.innerHTML += `<div class="counsbox"><p> <b>Name:</b> ${element.username}</p>
+                                              <p id="p${element.id}"> <b>ID:</b> ${element.id} </p>
+                                              <p> <b>Email:</b> ${element.email} </p>
+                                              <p> <b>Specialization:</b> ${element.specialization} </p>
+                                              <p> <b>Phonenumber:</b> ${element.phoneno} </p>
+                                              <p> <b>Years of Experience:</b> ${element.yearsOfExperience} </p>
                                               <buton type="button" onclick="selectcounsellor(${element.id},'${element.username}');setCookie('user','student',1);setCookie('counsellorname','${element.username}',1);setCookie('counsellorid','${element.id}',1);moveChat() " id="select${element.id}" class="selectbuttons"> Select Counsellor </button>
                                               <br>
                                               </div>`

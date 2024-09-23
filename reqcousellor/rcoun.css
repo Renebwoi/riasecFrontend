@@ -4,34 +4,56 @@
     box-sizing: border-box;
     font-family: "poppins", "sans-serif";
     }
-html{
+/* html{
     height: 100vh;
-}
+} */
 
 header{
-    position: fixed;
     width: 100svw;
-    height: 10svh;
-    /* background-color: white; */
-    background-color: rgba(45, 255, 255, 0.904);
+    height: 44px;
+    background-color: white;
+    /* background-image: linear-gradient(blueviolet,pink); */
 
     display: flex;
     align-items: center;
-    justify-content: space-around;
     font-size: larger;
     font-weight: 700;
+    gap: 40px;
+    justify-content: flex-start;
+    position: absolute;
+    top: 0px;
 }
-header a{
-    text-decoration: none;
-    color: black;
+.logo{
+    width: 150px;
+    height: 70%;
+    /* margin-right: 65svw; */
+}
+header .abox{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 600;
+    gap: 40px;
+    justify-content: flex-end;
+    padding-right: 40px;
+}
+header .abox a{
+    all: unset;
+    position:relative;
+    color: #784BA0;
 }
 
 body{
-    display:grid;
-    place-content: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: whitesmoke;
-    background-image: url('../op2.jpg');
-    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../studimg3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
 main{
@@ -61,12 +83,19 @@ main{
 }
 .selectbuttons{
     /* background-color: blue; */
-    background-color: rgba(45, 255, 255, 0.8);
+    background-color: blueviolet;
+    font-weight: 500;
+    transition-duration: 0.5s;
     border-radius: 10px;
     height: 25px;
     text-align: center;
+    line-height: 16px;
     margin-top: 10px;
     padding: 5px;
+}
+.selectbuttons:hover{
+    font-weight: 600;
+    color: white;
 }
 
 .counsbox{

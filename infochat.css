@@ -4,30 +4,56 @@
     box-sizing: border-box;
     font-family: "poppins", "sans-serif";
     }
-html{
+/* html{
     height: 100vh;
-}
+} */
 
 header{
-    position: fixed;
     width: 100svw;
-    height: 10svh;
-    /* background-color: white; */
-    background-color: rgba(45, 255, 255, 0.9);
+    height: 44px;
+    background-color: white;
+    /* background-image: linear-gradient(blueviolet,pink); */
 
     display: flex;
     align-items: center;
-    justify-content: space-around;
     font-size: larger;
     font-weight: 700;
+    gap: 40px;
+    justify-content: flex-start;
+    position: absolute;
+    top: 0px;
+}
+.logo{
+    width: 150px;
+    height: 70%;
+    /* margin-right: 65svw; */
+}
+header .abox{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 600;
+    gap: 40px;
+    justify-content: flex-end;
+    padding-right: 40px;
+}
+header .abox a{
+    all: unset;
+    position:relative;
+    color: #784BA0;
 }
 
 body{
-    display:grid;
-    place-content: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: whitesmoke;
-    background-image: url('../op2.jpg');
-    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../studimg3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
 main{
@@ -51,7 +77,13 @@ main{
     overflow-y: scroll;
     position: relative;
     background-color: #F5F5F5;
+
+    -ms-overflow-style: none;  /*hide scrollbar IE and Edge */
+    scrollbar-width: none;     /*hide scrollbar Firefox */
 }
+.questionBox::-webkit-scrollbar {
+    display: none;/*hide scrollbar Chrome*/
+  }
 
 .studentInfobox {
     display: flex;
@@ -83,7 +115,7 @@ main{
 #textinputbox{
     width: 100%;
     height: 100%;
-    border-color: rgba(45, 255, 255, 0.7);
+    border-color: #6068f840;
     background-color: white;
     border-radius: 4px;
 }
@@ -103,7 +135,7 @@ main{
 }
 
 .msgBox{
-    background-color: rgba(45, 255, 255, 0.7);
+    background-color: #6068f840;
     width: -moz-fit-content;
     width: fit-content;
     padding: 10px;

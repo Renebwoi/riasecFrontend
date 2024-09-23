@@ -4,47 +4,77 @@
     box-sizing: border-box;
     font-family: "poppins", "sans-serif";
     }
-html{
+/* html{
     height: 100vh;
-}
+} */
 
 header{
-    position: fixed;
     width: 100svw;
-    height: 10svh;
-    /* background-color: white; */
-    background-color: rgba(45, 255, 255, 0.904);
+    height: 44px;
+    background-color: white;
+    /* background-image: linear-gradient(blueviolet,pink); */
 
     display: flex;
     align-items: center;
-    justify-content: space-around;
     font-size: larger;
     font-weight: 700;
+    gap: 40px;
+    justify-content: flex-start;
+    position: absolute;
+    top: 0px;
 }
-header a{
-    text-decoration: none;
-    color: black;
+.logo{
+    width: 150px;
+    height: 70%;
+    /* margin-right: 65svw; */
+}
+header .abox{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 600;
+    gap: 40px;
+    justify-content: flex-end;
+    padding-right: 40px;
+}
+header .abox a{
+    all: unset;
+    position:relative;
+    color: #784BA0;
 }
 
 body{
-    display:grid;
-    place-content: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: whitesmoke;
-    background-image: url('op2.jpg');
-    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("studimg3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
 main{
-    width: 80svw;
+    width: 90%;
     height: 80svh;
     background-color: white;
     display: flex;
     justify-content: center;
     /* align-items: center; */
-    border-radius: 30px;
+    border-radius: 10px;
     margin-top: 20px;
     overflow-y: scroll;
+    /* clip-path: inset(0% 5px 0% 0%); */
+
+    -ms-overflow-style: none;  /*hide scrollbar IE and Edge */
+    scrollbar-width: none;     /*hide scrollbar Firefox */
 }
+main::-webkit-scrollbar {
+    display: none;/*hide scrollbar Chrome*/
+  }
+
 .questionBox{
     padding: 30px;
     width: 90%;
@@ -52,6 +82,7 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 .uploadBox{
     padding: 30px;
@@ -85,7 +116,8 @@ main{
     margin-top: 30px;
 }
 .count{
-    margin-top: 30px;
+    position: absolute;
+    bottom: 28px;
 }
 .answerbutton{
     min-width: 50px;
@@ -114,9 +146,15 @@ input[type="button"]{
     height: 30px;
     font-family: 'poppins';
     background-color: rgb(168, 121, 212);
+    padding: 20px 50px 30px 50px;
+    transition-duration: 0.5s;
+}
+input[type="button"]:hover{
+    color: white;
+    font-weight: 500;
 }
 #secondanswer{
-    margin-left: 20px;
+    margin-left: 40px;
 }
 .uploadmessage{
     width: 40svw;
@@ -129,7 +167,7 @@ select.subject-select,
 select.subject-select-number{
     height: 40px;
     border-radius: 5px;
-    background-color: rgba(45, 255, 255, 0.31);
+    background-color: #6068f840;
     border-width: 0px;
     /* text-align: center; */
 }
