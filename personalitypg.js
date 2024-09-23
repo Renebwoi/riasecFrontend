@@ -62,16 +62,2104 @@ const riasecQuestions = [
   ];
 
 const jobdata = [
-    { "InterestCode": "CSR", "Occupation": "Amusement and Recreation Attendants", "CodeLevel": 3, "ID": 1 },
-    { "InterestCode": "RC", "Occupation": "Agricultural Equipment Operators", "CodeLevel": 2, "ID": 2 },
-    { "InterestCode": "RCS", "Occupation": "Baristas", "CodeLevel": 3, "ID": 3 },
-    { "InterestCode": "RC", "Occupation": "Conveyor Operators and Tenders", "CodeLevel": 2, "ID": 4 },
-    { "InterestCode": "RCE", "Occupation": "Cooks, Fast Food", "CodeLevel": 3, "ID": 5 },
-    { "InterestCode": "RES", "Occupation": "Cooks, Institution and Cafeteria", "CodeLevel": 3, "ID": 6 },
-    { "InterestCode": "RE", "Occupation": "Cooks, Restaurant", "CodeLevel": 2, "ID": 7 },
-    { "InterestCode": "RES", "Occupation": "Cooks, Short Order", "CodeLevel": 3, "ID": 8 },
-    { "InterestCode": "RC", "Occupation": "Dishwashers", "CodeLevel": 2, "ID": 9 },
-    { "InterestCode": "RS", "Occupation": "Food Preparation Workers", "CodeLevel": 2, "ID": 10 },
+  {
+    "InterestCode": "CSR",
+    "Occupation": "Amusement and Recreation Attendants",
+    "CodeLevel": 3,
+    "ID": 1
+  },
+  {
+    "InterestCode": "RC",
+    "Occupation": "Agricultural Equipment Operators",
+    "CodeLevel": 2,
+    "ID": 2
+  },
+  {
+    "InterestCode": "RCS",
+    "Occupation": "Baristas",
+    "CodeLevel": 3,
+    "ID": 3
+  },
+  {
+    "InterestCode": "RC",
+    "Occupation": "Conveyor Operators and Tenders",
+    "CodeLevel": 2,
+    "ID": 4
+  },
+  {
+    "InterestCode": "RCE",
+    "Occupation": "Cooks, Fast Food",
+    "CodeLevel": 3,
+    "ID": 5
+  },
+  {
+    "InterestCode": "RC",
+    "Occupation": "Derrick Operators, Oil and Gas",
+    "CodeLevel": 2,
+    "ID": 6
+  },
+  {
+    "InterestCode": "RCS",
+    "Occupation": "Dining Room and Cafeteria Attendants and Bartender Helpers",
+    "CodeLevel": 3,
+    "ID": 7
+  },
+  {
+    "InterestCode": "RC",
+    "Occupation": "Dishwashers",
+    "CodeLevel": 2,
+    "ID": 8
+  },
+  {
+    "InterestCode": "RC",
+    "Occupation": "Fallers",
+    "CodeLevel": 2,
+    "ID": 9
+  },
+  {
+    "InterestCode": "RCE",
+    "Occupation": "Fast Food and Counter Workers",
+    "CodeLevel": 3,
+    "ID": 10
+  },
+  {
+    "InterestCode": "RC",
+    "Occupation": "Fishing and Hunting Workers",
+    "CodeLevel": 2,
+    "ID": 11
+  },
+  {
+    "InterestCode": "RC",
+    "Occupation": "Food Preparation Workers",
+    "CodeLevel": 2,
+    "ID": 12
+  },
+  {
+    "InterestCode": "RC",
+    "Occupation": "Graders and Sorters, Agricultural Products",
+    "CodeLevel": 2,
+    "ID": 13
+  },
+  {
+    "InterestCode": "RC",
+    "Occupation": "Landscaping and Groundskeeping Workers",
+    "CodeLevel": 2,
+    "ID": 14
+  },
+  {
+    "InterestCode": "RC",
+    "Occupation": "Laundry and Dry-Cleaning Workers",
+    "CodeLevel": 2,
+    "ID": 15
+  },
+  {
+    "InterestCode": "RC",
+    "Occupation": "Maids and Housekeeping Cleaners",
+    "CodeLevel": 2,
+    "ID": 16
+  },
+  {
+    "InterestCode": "RC",
+    "Occupation": "Meat, Poultry, and Fish Cutters and Trimmers",
+    "CodeLevel": 2,
+    "ID": 17
+  },
+  {
+    "InterestCode": "RC",
+    "Occupation": "Plasterers and Stucco Masons",
+    "CodeLevel": 2,
+    "ID": 18
+  },
+  {
+    "InterestCode": "RC",
+    "Occupation": "Septic Tank Servicers and Sewer Pipe Cleaners",
+    "CodeLevel": 2,
+    "ID": 19
+  },
+  {
+    "InterestCode": "RC",
+    "Occupation": "Sewing Machine Operators",
+    "CodeLevel": 2,
+    "ID": 20
+  },
+  {
+    "InterestCode": "CE",
+    "Occupation": "Cargo and Freight Agents",
+    "CodeLevel": 2,
+    "ID": 21
+  },
+  {
+    "InterestCode": "CE",
+    "Occupation": "Cashiers",
+    "CodeLevel": 2,
+    "ID": 22
+  },
+  {
+    "InterestCode": "CES",
+    "Occupation": "Customer Service Representatives",
+    "CodeLevel": 3,
+    "ID": 23
+  },
+  {
+    "InterestCode": "CRS",
+    "Occupation": "Flight Attendants",
+    "CodeLevel": 3,
+    "ID": 24
+  },
+  {
+    "InterestCode": "CER",
+    "Occupation": "Freight Forwarders",
+    "CodeLevel": 3,
+    "ID": 25
+  },
+  {
+    "InterestCode": "CER",
+    "Occupation": "Gambling Dealers",
+    "CodeLevel": 3,
+    "ID": 26
+  },
+  {
+    "InterestCode": "CSE",
+    "Occupation": "Hotel, Motel, and Resort Desk Clerks",
+    "CodeLevel": 3,
+    "ID": 27
+  },
+  {
+    "InterestCode": "CRS",
+    "Occupation": "Locker Room, Coatroom, and Dressing Room Attendants",
+    "CodeLevel": 3,
+    "ID": 28
+  },
+  {
+    "InterestCode": "CS",
+    "Occupation": "Medical Secretaries and Administrative Assistants",
+    "CodeLevel": 2,
+    "ID": 29
+  },
+  {
+    "InterestCode": "C",
+    "Occupation": "Office Clerks, General",
+    "CodeLevel": 1,
+    "ID": 30
+  },
+  {
+    "InterestCode": "CER",
+    "Occupation": "Pharmacy Aides",
+    "CodeLevel": 3,
+    "ID": 31
+  },
+  {
+    "InterestCode": "CE",
+    "Occupation": "Production, Planning, and Expediting Clerks",
+    "CodeLevel": 2,
+    "ID": 32
+  },
+  {
+    "InterestCode": "CRS",
+    "Occupation": "Public Safety Telecommunicators",
+    "CodeLevel": 3,
+    "ID": 33
+  },
+  {
+    "InterestCode": "CES",
+    "Occupation": "Receptionists and Information Clerks",
+    "CodeLevel": 3,
+    "ID": 34
+  },
+  {
+    "InterestCode": "CER",
+    "Occupation": "Retail Loss Prevention Specialists",
+    "CodeLevel": 3,
+    "ID": 35
+  },
+  {
+    "InterestCode": "CES",
+    "Occupation": "Secretaries and Administrative Assistants, Except Legal, Medical, and Executive",
+    "CodeLevel": 3,
+    "ID": 36
+  },
+  {
+    "InterestCode": "CRE",
+    "Occupation": "Stockers and Order Fillers",
+    "CodeLevel": 3,
+    "ID": 37
+  },
+  {
+    "InterestCode": "CE",
+    "Occupation": "Tellers",
+    "CodeLevel": 2,
+    "ID": 38
+  },
+  {
+    "InterestCode": "CE",
+    "Occupation": "Title Examiners, Abstractors, and Searchers",
+    "CodeLevel": 2,
+    "ID": 39
+  },
+  {
+    "InterestCode": "CR",
+    "Occupation": "Transportation Security Screeners",
+    "CodeLevel": 2,
+    "ID": 40
+  },
+  {
+    "InterestCode": "CRE",
+    "Occupation": "Airfield Operations Specialists",
+    "CodeLevel": 3,
+    "ID": 41
+  },
+  {
+    "InterestCode": "CE",
+    "Occupation": "Bookkeeping, Accounting, and Auditing Clerks",
+    "CodeLevel": 2,
+    "ID": 42
+  },
+  {
+    "InterestCode": "CE",
+    "Occupation": "Compliance Officers",
+    "CodeLevel": 2,
+    "ID": 43
+  },
+  {
+    "InterestCode": "CRI",
+    "Occupation": "Computer Numerically Controlled Tool Programmers",
+    "CodeLevel": 3,
+    "ID": 44
+  },
+  {
+    "InterestCode": "CRI",
+    "Occupation": "Computer User Support Specialists",
+    "CodeLevel": 3,
+    "ID": 45
+  },
+  {
+    "InterestCode": "CE",
+    "Occupation": "Customs Brokers",
+    "CodeLevel": 2,
+    "ID": 46
+  },
+  {
+    "InterestCode": "CRS",
+    "Occupation": "Dental Assistants",
+    "CodeLevel": 3,
+    "ID": 47
+  },
+  {
+    "InterestCode": "CRI",
+    "Occupation": "Energy Auditors",
+    "CodeLevel": 3,
+    "ID": 48
+  },
+  {
+    "InterestCode": "CE",
+    "Occupation": "Government Property Inspectors and Investigators",
+    "CodeLevel": 2,
+    "ID": 49
+  },
+  {
+    "InterestCode": "CIS",
+    "Occupation": "Health Information Technologists and Medical Registrars",
+    "CodeLevel": 3,
+    "ID": 50
+  },
+  {
+    "InterestCode": "CSR",
+    "Occupation": "Medical Assistants",
+    "CodeLevel": 3,
+    "ID": 51
+  },
+  {
+    "InterestCode": "CI",
+    "Occupation": "Medical Records Specialists",
+    "CodeLevel": 2,
+    "ID": 52
+  },
+  {
+    "InterestCode": "CR",
+    "Occupation": "Opticians, Dispensing",
+    "CodeLevel": 2,
+    "ID": 53
+  },
+  {
+    "InterestCode": "CIE",
+    "Occupation": "Paralegals and Legal Assistants",
+    "CodeLevel": 3,
+    "ID": 54
+  },
+  {
+    "InterestCode": "CR",
+    "Occupation": "Pharmacy Technicians",
+    "CodeLevel": 2,
+    "ID": 55
+  },
+  {
+    "InterestCode": "CRI",
+    "Occupation": "Police Identification and Records Officers",
+    "CodeLevel": 3,
+    "ID": 56
+  },
+  {
+    "InterestCode": "CEI",
+    "Occupation": "Private Detectives and Investigators",
+    "CodeLevel": 3,
+    "ID": 57
+  },
+  {
+    "InterestCode": "CE",
+    "Occupation": "Tax Preparers",
+    "CodeLevel": 2,
+    "ID": 58
+  },
+  {
+    "InterestCode": "CRI",
+    "Occupation": "Telecommunications Engineering Specialists",
+    "CodeLevel": 3,
+    "ID": 59
+  },
+  {
+    "InterestCode": "CI",
+    "Occupation": "Web Developers",
+    "CodeLevel": 2,
+    "ID": 60
+  },
+  {
+    "InterestCode": "CEI",
+    "Occupation": "Accountants and Auditors",
+    "CodeLevel": 3,
+    "ID": 61
+  },
+  {
+    "InterestCode": "CE",
+    "Occupation": "Appraisers and Assessors of Real Estate",
+    "CodeLevel": 2,
+    "ID": 62
+  },
+  {
+    "InterestCode": "CI",
+    "Occupation": "Blockchain Engineers",
+    "CodeLevel": 2,
+    "ID": 63
+  },
+  {
+    "InterestCode": "CIE",
+    "Occupation": "Business Intelligence Analysts",
+    "CodeLevel": 3,
+    "ID": 64
+  },
+  {
+    "InterestCode": "CI",
+    "Occupation": "Clinical Data Managers",
+    "CodeLevel": 2,
+    "ID": 65
+  },
+  {
+    "InterestCode": "CEI",
+    "Occupation": "Compensation, Benefits, and Job Analysis Specialists",
+    "CodeLevel": 3,
+    "ID": 66
+  },
+  {
+    "InterestCode": "CEI",
+    "Occupation": "Computer and Information Systems Managers",
+    "CodeLevel": 3,
+    "ID": 67
+  },
+  {
+    "InterestCode": "CI",
+    "Occupation": "Database Administrators",
+    "CodeLevel": 2,
+    "ID": 68
+  },
+  {
+    "InterestCode": "CIR",
+    "Occupation": "Environmental Compliance Inspectors",
+    "CodeLevel": 3,
+    "ID": 69
+  },
+  {
+    "InterestCode": "CIR",
+    "Occupation": "Geographic Information Systems Technologists and Technicians",
+    "CodeLevel": 3,
+    "ID": 70
+  },
+  {
+    "InterestCode": "CIR",
+    "Occupation": "Industrial Engineers",
+    "CodeLevel": 3,
+    "ID": 71
+  },
+  {
+    "InterestCode": "CI",
+    "Occupation": "Information Security Analysts",
+    "CodeLevel": 2,
+    "ID": 72
+  },
+  {
+    "InterestCode": "CEI",
+    "Occupation": "Logisticians",
+    "CodeLevel": 3,
+    "ID": 73
+  },
+  {
+    "InterestCode": "CIE",
+    "Occupation": "Management Analysts",
+    "CodeLevel": 3,
+    "ID": 74
+  },
+  {
+    "InterestCode": "CE",
+    "Occupation": "Online Merchants",
+    "CodeLevel": 2,
+    "ID": 75
+  },
+  {
+    "InterestCode": "CEI",
+    "Occupation": "Regulatory Affairs Specialists",
+    "CodeLevel": 3,
+    "ID": 76
+  },
+  {
+    "InterestCode": "CIR",
+    "Occupation": "Security Management Specialists",
+    "CodeLevel": 3,
+    "ID": 77
+  },
+  {
+    "InterestCode": "CRI",
+    "Occupation": "Surveyors",
+    "CodeLevel": 3,
+    "ID": 78
+  },
+  {
+    "InterestCode": "CAI",
+    "Occupation": "Technical Writers",
+    "CodeLevel": 3,
+    "ID": 79
+  },
+  {
+    "InterestCode": "CIE",
+    "Occupation": "Web Administrators",
+    "CodeLevel": 3,
+    "ID": 80
+  },
+  {
+    "InterestCode": "CEI",
+    "Occupation": "Administrative Law Judges, Adjudicators, and Hearing Officers",
+    "CodeLevel": 3,
+    "ID": 81
+  },
+  {
+    "InterestCode": "CI",
+    "Occupation": "Archivists",
+    "CodeLevel": 2,
+    "ID": 82
+  },
+  {
+    "InterestCode": "CE",
+    "Occupation": "Curators",
+    "CodeLevel": 2,
+    "ID": 83
+  },
+  {
+    "InterestCode": "CEI",
+    "Occupation": "Judicial Law Clerks",
+    "CodeLevel": 3,
+    "ID": 84
+  },
+  {
+    "InterestCode": "CSI",
+    "Occupation": "Librarians and Media Collections Specialists",
+    "CodeLevel": 3,
+    "ID": 85
+  },
+  {
+    "InterestCode": "SCI",
+    "Occupation": "Anesthesiologist Assistants",
+    "CodeLevel": 3,
+    "ID": 86
+  },
+  {
+    "InterestCode": "ECS",
+    "Occupation": "Arbitrators, Mediators, and Conciliators",
+    "CodeLevel": 3,
+    "ID": 87
+  },
+  {
+    "InterestCode": "IC",
+    "Occupation": "Biostatisticians",
+    "CodeLevel": 2,
+    "ID": 88
+  },
+  {
+    "InterestCode": "ICR",
+    "Occupation": "Computer and Information Research Scientists",
+    "CodeLevel": 3,
+    "ID": 89
+  },
+  {
+    "InterestCode": "ICE",
+    "Occupation": "Economists",
+    "CodeLevel": 3,
+    "ID": 90
+  },
+  {
+    "InterestCode": "IC",
+    "Occupation": "Financial Quantitative Analysts",
+    "CodeLevel": 2,
+    "ID": 91
+  },
+  {
+    "InterestCode": "ICR",
+    "Occupation": "Geneticists",
+    "CodeLevel": 3,
+    "ID": 92
+  },
+  {
+    "InterestCode": "ECI",
+    "Occupation": "Investment Fund Managers",
+    "CodeLevel": 3,
+    "ID": 93
+  },
+  {
+    "InterestCode": "ECI",
+    "Occupation": "Lawyers",
+    "CodeLevel": 3,
+    "ID": 94
+  },
+  {
+    "InterestCode": "IC",
+    "Occupation": "Mathematicians",
+    "CodeLevel": 2,
+    "ID": 95
+  },
+  {
+    "InterestCode": "IC",
+    "Occupation": "Operations Research Analysts",
+    "CodeLevel": 2,
+    "ID": 96
+  },
+  {
+    "InterestCode": "ICR",
+    "Occupation": "Radiologists",
+    "CodeLevel": 3,
+    "ID": 97
+  },
+  {
+    "InterestCode": "IC",
+    "Occupation": "Statisticians",
+    "CodeLevel": 2,
+    "ID": 98
+  },
+  {
+    "InterestCode": "IC",
+    "Occupation": "Survey Researchers",
+    "CodeLevel": 2,
+    "ID": 99
+  },
+  {"InterestCode": "SC",
+    "Occupation": "Teaching Assistants, Post Secondary",
+    "CodeLevel": 2,
+    "ID": 100
+  },{
+    "InterestCode": "RC",
+    "Occupation": "Cement Masons and Concrete Finishers",
+    "CodeLevel": 2,
+    "ID": 101
+  },
+  {
+    "InterestCode": "RC",
+    "Occupation": "Farmworkers and Laborers, Crop, Nursery, and Greenhouse",
+    "CodeLevel": 2,
+    "ID": 102
+  },
+  {
+    "InterestCode": "RC",
+    "Occupation": "Logging Equipment Operators",
+    "CodeLevel": 2,
+    "ID": 103
+  },
+  {
+    "InterestCode": "RC",
+    "Occupation": "Roustabouts, Oil and Gas",
+    "CodeLevel": 2,
+    "ID": 104
+  },
+  {
+    "InterestCode": "RSC",
+    "Occupation": "Animal Caretakers",
+    "CodeLevel": 3,
+    "ID": 105
+  },
+  {
+    "InterestCode": "RES",
+    "Occupation": "Athletes and Sports Competitors",
+    "CodeLevel": 3,
+    "ID": 106
+  },
+  {
+    "InterestCode": "RCS",
+    "Occupation": "Baggage Porters and Bellhops",
+    "CodeLevel": 3,
+    "ID": 107
+  },
+  {
+    "InterestCode": "RC",
+    "Occupation": "Bakers",
+    "CodeLevel": 2,
+    "ID": 108
+  },
+  {
+    "InterestCode": "RCE",
+    "Occupation": "Bartenders",
+    "CodeLevel": 3,
+    "ID": 109
+  },
+  {
+    "InterestCode": "RCS",
+    "Occupation": "Bus Drivers, Transit and Intercity",
+    "CodeLevel": 3,
+    "ID": 110
+  },
+  {
+    "InterestCode": "RC",
+    "Occupation": "Construction Laborers",
+    "CodeLevel": 2,
+    "ID": 111
+  },
+  {
+    "InterestCode": "RCE",
+    "Occupation": "Cooks, Restaurant",
+    "CodeLevel": 3,
+    "ID": 112
+  },
+  {
+    "InterestCode": "RCI",
+    "Occupation": "Electrical and Electronic Equipment Assemblers",
+    "CodeLevel": 3,
+    "ID": 113
+  },
+  {
+    "InterestCode": "RC",
+    "Occupation": "Heavy and Tractor-Trailer Truck Drivers",
+    "CodeLevel": 2,
+    "ID": 114
+  },
+  {
+    "InterestCode": "RC",
+    "Occupation": "Laborers and Freight, Stock, and Material Movers, Hand",
+    "CodeLevel": 2,
+    "ID": 115
+  },
+  {
+    "InterestCode": "RC",
+    "Occupation": "Light Truck Drivers",
+    "CodeLevel": 2,
+    "ID": 116
+  },
+  {
+    "InterestCode": "RC",
+    "Occupation": "Manicurists and Pedicurists",
+    "CodeLevel": 2,
+    "ID": 117
+  },
+  {
+    "InterestCode": "RCI",
+    "Occupation": "Medical Equipment Preparers",
+    "CodeLevel": 3,
+    "ID": 118
+  },
+  {
+    "InterestCode": "RC",
+    "Occupation": "Recycling and Reclamation Workers",
+    "CodeLevel": 2,
+    "ID": 119
+  },
+  {
+    "InterestCode": "RC",
+    "Occupation": "Security Guards",
+    "CodeLevel": 2,
+    "ID": 120
+  },
+  {
+    "InterestCode": "RC",
+    "Occupation": "Solar Photovoltaic Installers",
+    "CodeLevel": 2,
+    "ID": 121
+  },
+  {
+    "InterestCode": "RC",
+    "Occupation": "Telecommunications Line Installers and Repairers",
+    "CodeLevel": 2,
+    "ID": 122
+  },
+  {
+    "InterestCode": "RC",
+    "Occupation": "Tile and Stone Setters",
+    "CodeLevel": 2,
+    "ID": 123
+  },
+  {
+    "InterestCode": "RIC",
+    "Occupation": "Veterinary Assistants and Laboratory Animal Caretakers",
+    "CodeLevel": 3,
+    "ID": 124
+  },
+  {
+    "InterestCode": "RCI",
+    "Occupation": "Aerospace Engineering and Operations Technologists and Technicians",
+    "CodeLevel": 3,
+    "ID": 125
+  },
+  {
+    "InterestCode": "RC",
+    "Occupation": "Audio and Video Technicians",
+    "CodeLevel": 2,
+    "ID": 126
+  },
+  {
+    "InterestCode": "RCI",
+    "Occupation": "Electrical and Electronics Installers and Repairers, Transportation Equipment",
+    "CodeLevel": 3,
+    "ID": 127
+  },
+  {
+    "InterestCode": "RC",
+    "Occupation": "Electricians",
+    "CodeLevel": 2,
+    "ID": 128
+  },
+  {
+    "InterestCode": "RCI",
+    "Occupation": "Farm Equipment Mechanics and Service Technicians",
+    "CodeLevel": 3,
+    "ID": 129
+  },
+  {
+    "InterestCode": "RCI",
+    "Occupation": "Food Science Technicians",
+    "CodeLevel": 3,
+    "ID": 130
+  },
+  {
+    "InterestCode": "RC",
+    "Occupation": "Forest Fire Inspectors and Prevention Specialists",
+    "CodeLevel": 2,
+    "ID": 131
+  },
+  {
+    "InterestCode": "RCS",
+    "Occupation": "Hairdressers, Hairstylists, and Cosmetologists",
+    "CodeLevel": 3,
+    "ID": 132
+  },
+  {
+    "InterestCode": "RC",
+    "Occupation": "Heating, Air Conditioning, and Refrigeration Mechanics and Installers",
+    "CodeLevel": 2,
+    "ID": 133
+  },
+  {
+    "InterestCode": "RC",
+    "Occupation": "Janitors and Cleaners, Except Maids and Housekeeping Cleaners",
+    "CodeLevel": 2,
+    "ID": 134
+  },
+  {
+    "InterestCode": "RC",
+    "Occupation": "Maintenance and Repair Workers, General",
+    "CodeLevel": 2,
+    "ID": 135
+  },
+  {
+    "InterestCode": "RIC",
+    "Occupation": "Medical and Clinical Laboratory Technicians",
+    "CodeLevel": 3,
+    "ID": 136
+  },
+  {
+    "InterestCode": "RC",
+    "Occupation": "Motorboat Mechanics and Service Technicians",
+    "CodeLevel": 2,
+    "ID": 137
+  },
+  {
+    "InterestCode": "RCI",
+    "Occupation": "Occupational Health and Safety Technicians",
+    "CodeLevel": 3,
+    "ID": 138
+  },
+  {
+    "InterestCode": "RCI",
+    "Occupation": "Phlebotomists",
+    "CodeLevel": 3,
+    "ID": 139
+  },
+  {
+    "InterestCode": "RIC",
+    "Occupation": "Precision Agriculture Technicians",
+    "CodeLevel": 3,
+    "ID": 140
+  },
+  {
+    "InterestCode": "RCI",
+    "Occupation": "Radiologic Technologists and Technicians",
+    "CodeLevel": 3,
+    "ID": 141
+  },
+  {
+    "InterestCode": "RCS",
+    "Occupation": "Surgical Technologists",
+    "CodeLevel": 3,
+    "ID": 142
+  },
+  {
+    "InterestCode": "RIC",
+    "Occupation": "Veterinary Technologists and Technicians",
+    "CodeLevel": 3,
+    "ID": 143
+  },
+  {
+    "InterestCode": "RCI",
+    "Occupation": "Wind Turbine Service Technicians",
+    "CodeLevel": 3,
+    "ID": 144
+  },
+  {
+    "InterestCode": "RCE",
+    "Occupation": "Airline Pilots, Copilots, and Flight Engineers",
+    "CodeLevel": 3,
+    "ID": 145
+  },
+  {
+    "InterestCode": "RIC",
+    "Occupation": "Automotive Engineers",
+    "CodeLevel": 3,
+    "ID": 146
+  },
+  {
+    "InterestCode": "RIC",
+    "Occupation": "Biological Technicians",
+    "CodeLevel": 3,
+    "ID": 147
+  },
+  {
+    "InterestCode": "RIC",
+    "Occupation": "Chemical Engineers",
+    "CodeLevel": 3,
+    "ID": 148
+  },
+  {
+    "InterestCode": "RIC",
+    "Occupation": "Civil Engineers",
+    "CodeLevel": 3,
+    "ID": 149
+  },
+  {
+    "InterestCode": "RIC",
+    "Occupation": "Computer Hardware Engineers",
+    "CodeLevel": 3,
+    "ID": 150
+  },
+  {
+    "InterestCode": "RIC",
+    "Occupation": "Electronics Engineers, Except Computer",
+    "CodeLevel": 3,
+    "ID": 151
+  },
+  {
+    "InterestCode": "RIS",
+    "Occupation": "Exercise Physiologists",
+    "CodeLevel": 3,
+    "ID": 152
+  },
+  {
+    "InterestCode": "RIC",
+    "Occupation": "Fuel Cell Engineers",
+    "CodeLevel": 3,
+    "ID": 153
+  },
+  {
+    "InterestCode": "RCI",
+    "Occupation": "Geodetic Surveyors",
+    "CodeLevel": 3,
+    "ID": 154
+  },
+  {
+    "InterestCode": "RCI",
+    "Occupation": "Geological Technicians, Except Hydrologic Technicians",
+    "CodeLevel": 3,
+    "ID": 155
+  },
+  {
+    "InterestCode": "RIC",
+    "Occupation": "Manufacturing Engineers",
+    "CodeLevel": 3,
+    "ID": 156
+  },
+  {
+    "InterestCode": "RIC",
+    "Occupation": "Materials Engineers",
+    "CodeLevel": 3,
+    "ID": 157
+  },
+  {
+    "InterestCode": "RIC",
+    "Occupation": "Mechanical Engineers",
+    "CodeLevel": 3,
+    "ID": 158
+  },
+  {
+    "InterestCode": "RC",
+    "Occupation": "Museum Technicians and Conservators",
+    "CodeLevel": 2,
+    "ID": 159
+  },
+  {
+    "InterestCode": "RIE",
+    "Occupation": "Range Managers",
+    "CodeLevel": 3,
+    "ID": 160
+  },
+  {
+    "InterestCode": "RCI",
+    "Occupation": "Remote Sensing Technicians",
+    "CodeLevel": 3,
+    "ID": 161
+  },
+  {
+    "InterestCode": "RIC",
+    "Occupation": "Solar Energy Systems Engineers",
+    "CodeLevel": 3,
+    "ID": 162
+  },
+  {
+    "InterestCode": "RIC",
+    "Occupation": "Transportation Engineers",
+    "CodeLevel": 3,
+    "ID": 163
+  },
+  {
+    "InterestCode": "RIC",
+    "Occupation": "Water/Wastewater Engineers",
+    "CodeLevel": 3,
+    "ID": 164
+  },
+  {
+    "InterestCode": "RAI",
+    "Occupation": "Architects, Except Landscape and Naval",
+    "CodeLevel": 3,
+    "ID": 165
+  },
+  {
+    "InterestCode": "RIS",
+    "Occupation": "Orthotists and Prosthetists",
+    "CodeLevel": 3,
+    "ID": 166
+  },
+  {
+    "InterestCode": "RIS",
+    "Occupation": "Prosthodontists",
+    "CodeLevel": 3,
+    "ID": 167
+  },
+  {
+    "InterestCode": "RI",
+    "Occupation": "Veterinarians",
+    "CodeLevel": 2,
+    "ID": 168
+  },
+  {
+    "InterestCode": "SR",
+    "Occupation": "Adapted Physical Education Specialists",
+    "CodeLevel": 2,
+    "ID": 169
+  },
+  {
+    "InterestCode": "IR",
+    "Occupation": "Anthropologists and Archeologists",
+    "CodeLevel": 2,
+    "ID": 170
+  },
+  {
+    "InterestCode": "IR",
+    "Occupation": "Astronomers",
+    "CodeLevel": 2,
+    "ID": 171
+  },
+  {
+    "InterestCode": "SRI",
+    "Occupation": "Athletic Trainers",
+    "CodeLevel": 3,
+    "ID": 172
+  },
+  {
+    "InterestCode": "SRI",
+    "Occupation": "Chiropractors",
+    "CodeLevel": 3,
+    "ID": 173
+  },
+  {
+    "InterestCode": "IRC",
+    "Occupation": "Cytotechnologists",
+    "CodeLevel": 3,
+    "ID": 174
+  },
+  {
+    "InterestCode": "IRS",
+    "Occupation": "Dentists, General",
+    "CodeLevel": 3,
+    "ID": 175
+  },
+  {
+    "InterestCode": "IRS",
+    "Occupation": "Dermatologists",
+    "CodeLevel": 3,
+    "ID": 176
+  },
+  {
+    "InterestCode": "IRC",
+    "Occupation": "Environmental Restoration Planners",
+    "CodeLevel": 3,
+    "ID": 177
+  },
+  {
+    "InterestCode": "IRC",
+    "Occupation": "Geoscientists, Except Hydrologists and Geographers",
+    "CodeLevel": 3,
+    "ID": 178
+  },
+  {
+    "InterestCode": "IRC",
+    "Occupation": "Human Factors Engineers and Ergonomists",
+    "CodeLevel": 3,
+    "ID": 179
+  },
+  {
+    "InterestCode": "IRC",
+    "Occupation": "Microsystems Engineers",
+    "CodeLevel": 3,
+    "ID": 180
+  },
+  {
+    "InterestCode": "SRI",
+    "Occupation": "Nurse Anesthetists",
+    "CodeLevel": 3,
+    "ID": 181
+  },
+  {
+    "InterestCode": "IRC",
+    "Occupation": "Orthodontists",
+    "CodeLevel": 3,
+    "ID": 182
+  },
+  {
+    "InterestCode": "IRS",
+    "Occupation": "Orthopedic Surgeons, Except Pediatric",
+    "CodeLevel": 3,
+    "ID": 183
+  },
+  {
+    "InterestCode": "IR",
+    "Occupation": "Soil and Plant Scientists",
+    "CodeLevel": 2,
+    "ID": 184
+  },
+  {
+    "InterestCode": "RIC",
+    "Occupation": "Dental Laboratory Technicians",
+    "CodeLevel": 3,
+    "ID": 185
+  },
+  {
+    "InterestCode": "RIC",
+    "Occupation": "Non-Destructive Testing Specialists",
+    "CodeLevel": 3,
+    "ID": 186
+  },
+  {
+    "InterestCode": "SIC",
+    "Occupation": "Psychiatric Aides",
+    "CodeLevel": 3,
+    "ID": 187
+  },
+  {
+    "InterestCode": "RCI",
+    "Occupation": "Agricultural Inspectors",
+    "CodeLevel": 3,
+    "ID": 188
+  },
+  {
+    "InterestCode": "RCI",
+    "Occupation": "Animal Control Workers",
+    "CodeLevel": 3,
+    "ID": 189
+  },
+  {
+    "InterestCode": "RCI",
+    "Occupation": "Biofuels Processing Technicians",
+    "CodeLevel": 3,
+    "ID": 190
+  },
+  {
+    "InterestCode": "RCI",
+    "Occupation": "Chemical Equipment Operators and Tenders",
+    "CodeLevel": 3,
+    "ID": 191
+  },
+  {
+    "InterestCode": "RCI",
+    "Occupation": "Chemical Plant and System Operators",
+    "CodeLevel": 3,
+    "ID": 192
+  },
+  {
+    "InterestCode": "RCI",
+    "Occupation": "Earth Drillers, Except Oil and Gas",
+    "CodeLevel": 3,
+    "ID": 193
+  },
+  {
+    "InterestCode": "RCI",
+    "Occupation": "Electromechanical Equipment Assemblers",
+    "CodeLevel": 3,
+    "ID": 194
+  },
+  {
+    "InterestCode": "RCI",
+    "Occupation": "Endoscopy Technicians",
+    "CodeLevel": 3,
+    "ID": 195
+  },
+  {
+    "InterestCode": "RCI",
+    "Occupation": "Explosives Workers, Ordnance Handling Experts, and Blasters",
+    "CodeLevel": 3,
+    "ID": 196
+  },
+  {
+    "InterestCode": "RCI",
+    "Occupation": "Geothermal Technicians",
+    "CodeLevel": 3,
+    "ID": 197
+  },
+  {
+    "InterestCode": "RCI",
+    "Occupation": "Inspectors, Testers, Sorters, Samplers, and Weighers",
+    "CodeLevel": 3,
+    "ID": 198
+  },
+  {
+    "InterestCode": "RCI",
+    "Occupation": "Locomotive Engineers",
+    "CodeLevel": 3,
+    "ID": 199
+  },
+  {
+    "InterestCode": "RCI",
+    "Occupation": "Operating Engineers and Other Construction Equipment Operators",
+    "CodeLevel": 3,
+    "ID": 200
+  },
+  {
+    "InterestCode": "RCI",
+    "Occupation": "Transportation Vehicle, Equipment and Systems Inspectors, Except Aviation",
+    "CodeLevel": 3,
+    "ID": 201
+  },
+  {
+    "InterestCode": "IRC",
+    "Occupation": "Chemical Technicians",
+    "CodeLevel": 3,
+    "ID": 202
+  },
+  {
+    "InterestCode": "IC",
+    "Occupation": "Computer Systems Analysts",
+    "CodeLevel": 2,
+    "ID": 203
+  },
+  {
+    "InterestCode": "ICR",
+    "Occupation": "Coroners",
+    "CodeLevel": 3,
+    "ID": 204
+  },
+  {
+    "InterestCode": "ICR",
+    "Occupation": "Detectives and Criminal Investigators",
+    "CodeLevel": 3,
+    "ID": 205
+  },
+  {
+    "InterestCode": "ICR",
+    "Occupation": "Forensic Science Technicians",
+    "CodeLevel": 3,
+    "ID": 206
+  },
+  {
+    "InterestCode": "ICR",
+    "Occupation": "Medical Dosimetrists",
+    "CodeLevel": 3,
+    "ID": 207
+  },
+  {
+    "InterestCode": "IRC",
+    "Occupation": "Neurodiagnostic Technologists",
+    "CodeLevel": 3,
+    "ID": 208
+  },
+  {
+    "InterestCode": "RIC",
+    "Occupation": "Cardiovascular Technologists and Technicians",
+    "CodeLevel": 3,
+    "ID": 209
+  },
+  {
+    "InterestCode": "RIC",
+    "Occupation": "Civil Engineering Technologists and Technicians",
+    "CodeLevel": 3,
+    "ID": 210
+  },
+  {
+    "InterestCode": "RIC",
+    "Occupation": "Commercial Divers",
+    "CodeLevel": 3,
+    "ID": 211
+  },
+  {
+    "InterestCode": "RIC",
+    "Occupation": "Electrical and Electronic Engineering Technologists and Technicians",
+    "CodeLevel": 3,
+    "ID": 212
+  },
+  {
+    "InterestCode": "SIC",
+    "Occupation": "Hearing Aid Specialists",
+    "CodeLevel": 3,
+    "ID": 213
+  },
+  {
+    "InterestCode": "RIC",
+    "Occupation": "Medical Appliance Technicians",
+    "CodeLevel": 3,
+    "ID": 214
+  },
+  {
+    "InterestCode": "SI",
+    "Occupation": "Psychiatric Technicians",
+    "CodeLevel": 2,
+    "ID": 215
+  },
+  {
+    "InterestCode": "CIR",
+    "Occupation": "Quality Control Analysts",
+    "CodeLevel": 3,
+    "ID": 216
+  },
+  {
+    "InterestCode": "IRC",
+    "Occupation": "Aerospace Engineers",
+    "CodeLevel": 3,
+    "ID": 217
+  },
+  {
+    "InterestCode": "IRC",
+    "Occupation": "Agricultural Engineers",
+    "CodeLevel": 3,
+    "ID": 218
+  },
+  {
+    "InterestCode": "IR",
+    "Occupation": "Bioengineers and Biomedical Engineers",
+    "CodeLevel": 2,
+    "ID": 219
+  },
+  {
+    "InterestCode": "ICR",
+    "Occupation": "Bioinformatics Technicians",
+    "CodeLevel": 3,
+    "ID": 220
+  },
+  {
+    "InterestCode": "IRC",
+    "Occupation": "Chemists",
+    "CodeLevel": 3,
+    "ID": 221
+  },
+  {
+    "InterestCode": "ICE",
+    "Occupation": "Clinical Research Coordinators",
+    "CodeLevel": 3,
+    "ID": 222
+  },
+  {
+    "InterestCode": "IRC",
+    "Occupation": "Cytogenetic Technologists",
+    "CodeLevel": 3,
+    "ID": 223
+  },
+  {
+    "InterestCode": "IC",
+    "Occupation": "Data Scientists",
+    "CodeLevel": 2,
+    "ID": 224
+  },
+  {
+    "InterestCode": "IC",
+    "Occupation": "Digital Forensics Analysts",
+    "CodeLevel": 2,
+    "ID": 225
+  },
+  {
+    "InterestCode": "IRC",
+    "Occupation": "Environmental Scientists and Specialists, Including Health",
+    "CodeLevel": 3,
+    "ID": 226
+  },
+  {
+    "InterestCode": "IRC",
+    "Occupation": "Food Scientists and Technologists",
+    "CodeLevel": 3,
+    "ID": 227
+  },
+  {
+    "InterestCode": "ICS",
+    "Occupation": "Health Informatics Specialists",
+    "CodeLevel": 3,
+    "ID": 228
+  },
+  {
+    "InterestCode": "IRC",
+    "Occupation": "Medical and Clinical Laboratory Technologists",
+    "CodeLevel": 3,
+    "ID": 229
+  },
+  {
+    "InterestCode": "ICR",
+    "Occupation": "Occupational Health and Safety Specialists",
+    "CodeLevel": 3,
+    "ID": 230
+  },
+  {
+    "InterestCode": "ICR",
+    "Occupation": "Penetration Testers",
+    "CodeLevel": 3,
+    "ID": 231
+  },
+  {
+    "InterestCode": "ICR",
+    "Occupation": "Software Developers",
+    "CodeLevel": 3,
+    "ID": 232
+  },
+  {
+    "InterestCode": "ICR",
+    "Occupation": "Software Quality Assurance Analysts and Testers",
+    "CodeLevel": 3,
+    "ID": 233
+  },
+  {
+    "InterestCode": "IEC",
+    "Occupation": "Sustainability Specialists",
+    "CodeLevel": 3,
+    "ID": 234
+  },
+  {
+    "InterestCode": "ICR",
+    "Occupation": "Validation Engineers",
+    "CodeLevel": 3,
+    "ID": 235
+  },
+  {
+    "InterestCode": "IRC",
+    "Occupation": "Water Resource Specialists",
+    "CodeLevel": 3,
+    "ID": 236
+  },
+  {
+    "InterestCode": "IR",
+    "Occupation": "Animal Scientists",
+    "CodeLevel": 2,
+    "ID": 237
+  },
+  {
+    "InterestCode": "ISC",
+    "Occupation": "Audiologists",
+    "CodeLevel": 3,
+    "ID": 238
+  },
+  {
+    "InterestCode": "IEC",
+    "Occupation": "Climate Change Policy Analysts",
+    "CodeLevel": 3,
+    "ID": 239
+  },
+  {
+    "InterestCode": "ISC",
+    "Occupation": "Genetic Counselors",
+    "CodeLevel": 3,
+    "ID": 240
+  },
+  {
+    "InterestCode": "IRC",
+    "Occupation": "Industrial Ecologists",
+    "CodeLevel": 3,
+    "ID": 241
+  },
+  {
+    "InterestCode": "IES",
+    "Occupation": "Industrial-Organizational Psychologists",
+    "CodeLevel": 3,
+    "ID": 242
+  },
+  {
+    "InterestCode": "IRC",
+    "Occupation": "Medical Scientists, Except Epidemiologists",
+    "CodeLevel": 3,
+    "ID": 243
+  },
+  {
+    "InterestCode": "IEC",
+    "Occupation": "Natural Sciences Managers",
+    "CodeLevel": 3,
+    "ID": 244
+  },
+  {
+    "InterestCode": "ISC",
+    "Occupation": "Nurse Practitioners",
+    "CodeLevel": 3,
+    "ID": 245
+  },
+  {
+    "InterestCode": "ISR",
+    "Occupation": "Optometrists",
+    "CodeLevel": 3,
+    "ID": 246
+  },
+  {
+    "InterestCode": "IRC",
+    "Occupation": "Physicists",
+    "CodeLevel": 3,
+    "ID": 247
+  },
+  {
+    "InterestCode": "IA",
+    "Occupation": "Political Scientists",
+    "CodeLevel": 2,
+    "ID": 248
+  },
+  {
+    "InterestCode": "RAC",
+    "Occupation": "Painting, Coating, and Decorating Workers",
+    "CodeLevel": 3,
+    "ID": 249
+  },
+  {
+    "InterestCode": "ASE",
+    "Occupation": "Actors",
+    "CodeLevel": 3,
+    "ID": 250
+  },
+  {
+    "InterestCode": "ACR",
+    "Occupation": "Costume Attendants",
+    "CodeLevel": 3,
+    "ID": 251
+  },
+  {
+    "InterestCode": "AEC",
+    "Occupation": "Disc Jockeys, Except Radio",
+    "CodeLevel": 3,
+    "ID": 252
+  },
+  {
+    "InterestCode": "ARE",
+    "Occupation": "Models",
+    "CodeLevel": 3,
+    "ID": 253
+  },
+  {
+    "InterestCode": "RAC",
+    "Occupation": "Floral Designers",
+    "CodeLevel": 3,
+    "ID": 254
+  },
+  {
+    "InterestCode": "SA",
+    "Occupation": "Nannies",
+    "CodeLevel": 2,
+    "ID": 255
+  },
+  {
+    "InterestCode": "RA",
+    "Occupation": "Shoe and Leather Workers and Repairers",
+    "CodeLevel": 2,
+    "ID": 256
+  },
+  {
+    "InterestCode": "RAC",
+    "Occupation": "Stone Cutters and Carvers, Manufacturing",
+    "CodeLevel": 3,
+    "ID": 257
+  },
+  {
+    "InterestCode": "RA",
+    "Occupation": "Tailors, Dressmakers, and Custom Sewers",
+    "CodeLevel": 2,
+    "ID": 258
+  },
+  {
+    "InterestCode": "RAC",
+    "Occupation": "Upholsterers",
+    "CodeLevel": 3,
+    "ID": 259
+  },
+  {
+    "InterestCode": "SCA",
+    "Occupation": "Childcare Workers",
+    "CodeLevel": 3,
+    "ID": 260
+  },
+  {
+    "InterestCode": "RCA",
+    "Occupation": "Etchers and Engravers",
+    "CodeLevel": 3,
+    "ID": 261
+  },
+  {
+    "InterestCode": "RCA",
+    "Occupation": "Furniture Finishers",
+    "CodeLevel": 3,
+    "ID": 262
+  },
+  {
+    "InterestCode": "RCA",
+    "Occupation": "Paperhangers",
+    "CodeLevel": 3,
+    "ID": 263
+  },
+  {
+    "InterestCode": "RCA",
+    "Occupation": "Photographic Process Workers and Processing Machine Operators",
+    "CodeLevel": 3,
+    "ID": 264
+  },
+  {
+    "InterestCode": "RCA",
+    "Occupation": "Sewers, Hand",
+    "CodeLevel": 3,
+    "ID": 265
+  },
+  {
+    "InterestCode": "ARC",
+    "Occupation": "Camera Operators, Television, Video, and Film",
+    "CodeLevel": 3,
+    "ID": 266
+  },
+  {
+    "InterestCode": "AR",
+    "Occupation": "Craft Artists",
+    "CodeLevel": 2,
+    "ID": 267
+  },
+  {
+    "InterestCode": "ARS",
+    "Occupation": "Dancers",
+    "CodeLevel": 3,
+    "ID": 268
+  },
+  {
+    "InterestCode": "ARE",
+    "Occupation": "Fashion Designers",
+    "CodeLevel": 3,
+    "ID": 269
+  },
+  {
+    "InterestCode": "AR",
+    "Occupation": "Fine Artists, Including Painters, Sculptors, and Illustrators",
+    "CodeLevel": 2,
+    "ID": 270
+  },
+  {
+    "InterestCode": "AR",
+    "Occupation": "Makeup Artists, Theatrical and Performance",
+    "CodeLevel": 2,
+    "ID": 271
+  },
+  {
+    "InterestCode": "ARE",
+    "Occupation": "Merchandise Displayers and Window Trimmers",
+    "CodeLevel": 3,
+    "ID": 272
+  },
+  {
+    "InterestCode": "CA",
+    "Occupation": "Desktop Publishers",
+    "CodeLevel": 2,
+    "ID": 273
+  },
+  {
+    "InterestCode": "RAC",
+    "Occupation": "Fabric and Apparel Patternmakers",
+    "CodeLevel": 3,
+    "ID": 274
+  },
+  {
+    "InterestCode": "RAC",
+    "Occupation": "Jewelers and Precious Stone and Metal Workers",
+    "CodeLevel": 3,
+    "ID": 275
+  },
+  {
+    "InterestCode": "RAC",
+    "Occupation": "Musical Instrument Repairers and Tuners",
+    "CodeLevel": 3,
+    "ID": 276
+  },
+  {
+    "InterestCode": "RA",
+    "Occupation": "Photographers",
+    "CodeLevel": 2,
+    "ID": 277
+  },
+  {
+    "InterestCode": "SA",
+    "Occupation": "Preschool Teachers, Except Special Education",
+    "CodeLevel": 2,
+    "ID": 278
+  },
+  {
+    "InterestCode": "SA",
+    "Occupation": "Self-Enrichment Teachers",
+    "CodeLevel": 2,
+    "ID": 279
+  },
+  {
+    "InterestCode": "RAC",
+    "Occupation": "Sound Engineering Technicians",
+    "CodeLevel": 3,
+    "ID": 280
+  },
+  {
+    "InterestCode": "RCA",
+    "Occupation": "Architectural and Civil Drafters",
+    "CodeLevel": 3,
+    "ID": 281
+  },
+  {
+    "InterestCode": "RCA",
+    "Occupation": "Model Makers, Wood",
+    "CodeLevel": 3,
+    "ID": 282
+  },
+  {
+    "InterestCode": "RCA",
+    "Occupation": "Patternmakers, Metal and Plastic",
+    "CodeLevel": 3,
+    "ID": 283
+  },
+  {
+    "InterestCode": "RCA",
+    "Occupation": "Patternmakers, Wood",
+    "CodeLevel": 3,
+    "ID": 284
+  },
+  {
+    "InterestCode": "AE",
+    "Occupation": "Art Directors",
+    "CodeLevel": 2,
+    "ID": 285
+  },
+  {
+    "InterestCode": "AES",
+    "Occupation": "Broadcast Announcers and Radio Disc Jockeys",
+    "CodeLevel": 3,
+    "ID": 286
+  },
+  {
+    "InterestCode": "AS",
+    "Occupation": "Choreographers",
+    "CodeLevel": 2,
+    "ID": 287
+  },
+  {
+    "InterestCode": "ARI",
+    "Occupation": "Commercial and Industrial Designers",
+    "CodeLevel": 3,
+    "ID": 288
+  },
+  {
+    "InterestCode": "ACE",
+    "Occupation": "Editors",
+    "CodeLevel": 3,
+    "ID": 289
+  },
+  {
+    "InterestCode": "AC",
+    "Occupation": "Film and Video Editors",
+    "CodeLevel": 2,
+    "ID": 290
+  },
+  {
+    "InterestCode": "A",
+    "Occupation": "Graphic Designers",
+    "CodeLevel": 1,
+    "ID": 291
+  },
+  {
+    "InterestCode": "AR",
+    "Occupation": "Interior Designers",
+    "CodeLevel": 2,
+    "ID": 292
+  },
+  {
+    "InterestCode": "AE",
+    "Occupation": "Music Directors and Composers",
+    "CodeLevel": 2,
+    "ID": 293
+  },
+  {
+    "InterestCode": "AE",
+    "Occupation": "Musicians and Singers",
+    "CodeLevel": 2,
+    "ID": 294
+  },
+  {
+    "InterestCode": "AIE",
+    "Occupation": "News Analysts, Reporters, and Journalists",
+    "CodeLevel": 3,
+    "ID": 295
+  },
+  {
+    "InterestCode": "AI",
+    "Occupation": "Poets, Lyricists and Creative Writers",
+    "CodeLevel": 2,
+    "ID": 296
+  },
+  {
+    "InterestCode": "AE",
+    "Occupation": "Producers and Directors",
+    "CodeLevel": 2,
+    "ID": 297
+  },
+  {
+    "InterestCode": "AR",
+    "Occupation": "Special Effects Artists and Animators",
+    "CodeLevel": 2,
+    "ID": 298
+  },
+  {
+    "InterestCode": "AIE",
+    "Occupation": "Video Game Designers",
+    "CodeLevel": 3,
+    "ID": 299
+  },
+  {
+    "InterestCode": "AE",
+    "Occupation": "Writers and Authors",
+    "CodeLevel": 2,
+    "ID": 300
+  },
+  {
+    "InterestCode": "SA",
+    "Occupation": "Kindergarten Teachers, Except Special Education",
+    "CodeLevel": 2,
+    "ID": 301
+  },
+  {
+    "InterestCode": "SAI",
+    "Occupation": "Music Therapists",
+    "CodeLevel": 3,
+    "ID": 302
+  },
+  {
+    "InterestCode": "EAS",
+    "Occupation": "Talent Directors",
+    "CodeLevel": 3,
+    "ID": 303
+  },
+  {
+    "InterestCode": "IAC",
+    "Occupation": "Web and Digital Interface Designers",
+    "CodeLevel": 3,
+    "ID": 304
+  },
+  {
+    "InterestCode": "A",
+    "Occupation": "Set and Exhibit Designers",
+    "CodeLevel": 1,
+    "ID": 305
+  },
+  {
+    "InterestCode": "SA",
+    "Occupation": "Art Therapists",
+    "CodeLevel": 2,
+    "ID": 306
+  },
+  {
+    "InterestCode": "SA",
+    "Occupation": "Art, Drama, and Music Teachers, Postsecondary",
+    "CodeLevel": 2,
+    "ID": 307
+  },
+  {
+    "InterestCode": "SA",
+    "Occupation": "Special Education Teachers, Preschool",
+    "CodeLevel": 2,
+    "ID": 308
+  },
+  {
+    "InterestCode": "SIA",
+    "Occupation": "Architecture Teachers, Postsecondary",
+    "CodeLevel": 3,
+    "ID": 309
+  },
+  {
+    "InterestCode": "SIA",
+    "Occupation": "English Language and Literature Teachers, Postsecondary",
+    "CodeLevel": 3,
+    "ID": 310
+  },
+  {
+    "InterestCode": "ISA",
+    "Occupation": "Sociologists",
+    "CodeLevel": 3,
+    "ID": 311
+  },
+  {
+    "InterestCode": "SRC",
+    "Occupation": "Home Health Aides",
+    "CodeLevel": 3,
+    "ID": 312
+  },
+  {
+    "InterestCode": "SEC",
+    "Occupation": "Hosts and Hostesses, Restaurant, Lounge, and Coffee Shop",
+    "CodeLevel": 3,
+    "ID": 313
+  },
+  {
+    "InterestCode": "SCR",
+    "Occupation": "Personal Care Aides",
+    "CodeLevel": 3,
+    "ID": 314
+  },
+  {
+    "InterestCode": "SRC",
+    "Occupation": "Physical Therapist Aides",
+    "CodeLevel": 3,
+    "ID": 315
+  },
+  {
+    "InterestCode": "SCR",
+    "Occupation": "School Bus Monitors",
+    "CodeLevel": 3,
+    "ID": 316
+  },
+  {
+    "InterestCode": "SEC",
+    "Occupation": "Travel Guides",
+    "CodeLevel": 3,
+    "ID": 317
+  },
+  {
+    "InterestCode": "SCE",
+    "Occupation": "Ushers, Lobby Attendants, and Ticket Takers",
+    "CodeLevel": 3,
+    "ID": 318
+  },
+  {
+    "InterestCode": "SCE",
+    "Occupation": "Waiters and Waitresses",
+    "CodeLevel": 3,
+    "ID": 319
+  },
+  {
+    "InterestCode": "RS",
+    "Occupation": "Animal Trainers",
+    "CodeLevel": 2,
+    "ID": 320
+  },
+  {
+    "InterestCode": "RSC",
+    "Occupation": "Food Servers, Nonrestaurant",
+    "CodeLevel": 3,
+    "ID": 321
+  },
+  {
+    "InterestCode": "RSC",
+    "Occupation": "Funeral Attendants",
+    "CodeLevel": 3,
+    "ID": 322
+  },
+  {
+    "InterestCode": "RSC",
+    "Occupation": "Lifeguards, Ski Patrol, and Other Recreational Protective Service Workers",
+    "CodeLevel": 3,
+    "ID": 323
+  },
+  {
+    "InterestCode": "CSR",
+    "Occupation": "Passenger Attendants",
+    "CodeLevel": 3,
+    "ID": 324
+  },
+  {
+    "InterestCode": "RSC",
+    "Occupation": "Shampooers",
+    "CodeLevel": 3,
+    "ID": 325
+  },
+  {
+    "InterestCode": "SIR",
+    "Occupation": "Acute Care Nurses",
+    "CodeLevel": 3,
+    "ID": 326
+  },
+  {
+    "InterestCode": "SEC",
+    "Occupation": "Concierges",
+    "CodeLevel": 3,
+    "ID": 327
+  },
+  {
+    "InterestCode": "SRI",
+    "Occupation": "Dental Hygienists",
+    "CodeLevel": 3,
+    "ID": 328
+  },
+  {
+    "InterestCode": "SRI",
+    "Occupation": "Emergency Medical Technicians",
+    "CodeLevel": 3,
+    "ID": 329
+  },
+  {
+    "InterestCode": "SR",
+    "Occupation": "Exercise Trainers and Group Fitness Instructors",
+    "CodeLevel": 2,
+    "ID": 330
+  },
+  {
+    "InterestCode": "SRC",
+    "Occupation": "Licensed Practical and Licensed Vocational Nurses",
+    "CodeLevel": 3,
+    "ID": 331
+  },
+  {
+    "InterestCode": "SRI",
+    "Occupation": "Massage Therapists",
+    "CodeLevel": 3,
+    "ID": 332
+  },
+  {
+    "InterestCode": "SRC",
+    "Occupation": "Nursing Assistants",
+    "CodeLevel": 3,
+    "ID": 333
+  },
+  {
+    "InterestCode": "SRC",
+    "Occupation": "Occupational Therapy Aides",
+    "CodeLevel": 3,
+    "ID": 334
+  },
+  {
+    "InterestCode": "SCR",
+    "Occupation": "Occupational Therapy Assistants",
+    "CodeLevel": 3,
+    "ID": 335
+  },
+  {
+    "InterestCode": "SRI",
+    "Occupation": "Paramedics",
+    "CodeLevel": 3,
+    "ID": 336
+  },
+  {
+    "InterestCode": "SIC",
+    "Occupation": "Patient Representatives",
+    "CodeLevel": 3,
+    "ID": 337
+  },
+  {
+    "InterestCode": "SRC",
+    "Occupation": "Physical Therapist Assistants",
+    "CodeLevel": 3,
+    "ID": 338
+  },
+  {
+    "InterestCode": "SCE",
+    "Occupation": "Residential Advisors",
+    "CodeLevel": 3,
+    "ID": 339
+  },
+  {
+    "InterestCode": "SRI",
+    "Occupation": "Respiratory Therapists",
+    "CodeLevel": 3,
+    "ID": 340
+  },
+  {
+    "InterestCode": "SCI",
+    "Occupation": "Speech-Language Pathology Assistants",
+    "CodeLevel": 3,
+    "ID": 341
+  },
+  {
+    "InterestCode": "SE",
+    "Occupation": "Tour Guides and Escorts",
+    "CodeLevel": 2,
+    "ID": 342
+  },
+  {
+    "InterestCode": "S",
+    "Occupation": "Career/Technical Education Teachers, Secondary School",
+    "CodeLevel": 1,
+    "ID": 343
+  },
+  {
+    "InterestCode": "S",
+    "Occupation": "Child, Family, and School Social Workers",
+    "CodeLevel": 1,
+    "ID": 344
+  },
+  {
+    "InterestCode": "SER",
+    "Occupation": "Coaches and Scouts",
+    "CodeLevel": 3,
+    "ID": 345
+  },
+  {
+    "InterestCode": "S",
+    "Occupation": "Community Health Workers",
+    "CodeLevel": 1,
+    "ID": 346
+  },
+  {
+    "InterestCode": "SIR",
+    "Occupation": "Critical Care Nurses",
+    "CodeLevel": 3,
+    "ID": 347
+  },
+  {
+    "InterestCode": "SE",
+    "Occupation": "Directors, Religious Activities and Education",
+    "CodeLevel": 2,
+    "ID": 348
+  },
+  {
+    "InterestCode": "SEC",
+    "Occupation": "Education and Childcare Administrators, Preschool and Daycare",
+    "CodeLevel": 3,
+    "ID": 349
+  },
+  {
+    "InterestCode": "SA",
+    "Occupation": "Elementary School Teachers, Except Special Education",
+    "CodeLevel": 2,
+    "ID": 350
+  },
     { "InterestCode": "RC", "Occupation": "Watch and Clock Repairers", "CodeLevel": 2, "ID": 823 },
     { "InterestCode": "RC", "Occupation": "Water and Wastewater Treatment Plant and System Operators", "CodeLevel": 2, "ID": 824 },
     { "InterestCode": "RIC", "Occupation": "Electrical Engineers", "CodeLevel": 3, "ID": 825 },
