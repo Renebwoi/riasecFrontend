@@ -149,3 +149,7 @@ main{
 .counMsgBox{
     margin-right: auto;
 }
+
+.error-container{
+    color: white;
+}

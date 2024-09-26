@@ -75,6 +75,9 @@ async function selectcounsellor(num,name) {
     counsellorname: counsellorName,
     counsellorid: counsellorid,
   }
+  // --------------------------------------------------------------------------------------------------------------------------------------
+  // ADD AN EXTRA FETCH REQUEST TO CHECK IF THIS BODY IS ALREADY IN THE COUNSELLORPUPILS DATBASE
+  // IF SO DONT POST. TO FIX THE ISSUE WITH MULTIPLE CHATS WITH ONE STUDENT
   let mainurl = "https://riasecnode.onrender.com/api/postpupilrequest"
   const postrequest = postData(mainurl,body)
   

@@ -93,7 +93,7 @@ async function main(){
     console.log("counspupilsData ", counpupilsData)
 
     for(let i=0;i<counpupilsData.length;i++){
-        pupilsection.innerHTML += `<section class="metrics">
+        pupilsection.innerHTML += `<section class="metrics metric${i}">
                 <div class="graphMetric">
                     <div class="loadCircle">
                         <div class="spaceCircle">
@@ -172,3 +172,29 @@ async function fetchData(url) {
     window.location.href = "./infochatpage.html";
     // console.log("move chat")
   }
+
+  function filtername(){
+    let typedName = document.querySelector('#searchBar').value.toLowerCase();
+    // let studentNames = document.querySelectorAll('.textMetric h3')[0].outerText;
+    let studentNames = document.querySelectorAll('.textMetric h3');
+    console.log(studentNames, typedName)
+
+    // studentNames.forEach(element => {
+    //   if(typedName)
+    // });
+    for (let i = 0; i < studentNames.length; i++) {
+      // const element = array[i];
+      if(!( studentNames[i].outerText.toLowerCase().includes(typedName) )){
+        console.log(studentNames[i].outerText)
+
+        document.querySelector(`.metric${i}`).style.display = "none";
+      }
+      else{
+        document.querySelector(`.metric${i}`).style.display = "flex";
+      }
+      
+    }
+
+    
+  }
+

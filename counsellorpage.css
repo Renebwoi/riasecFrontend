@@ -17,16 +17,16 @@ body{
     display:flex;
     flex-direction: column;
     background-color: blueviolet;
-    background-image: url("op2.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("studimg5.jpg");
     background-size: cover;
     /* background-repeat: no-repeat; */
+    box-shadow: 0px 500px 1px 1px black;
 }
 
-header{
+/* header{
     width: 100svw;
     height: 10svh;
     background-color: white;
-    /* background-image: linear-gradient(blueviolet,pink); */
 
     display: flex;
     align-items: center;
@@ -36,22 +36,62 @@ header{
 }
 header a{
     all: unset;
+} */
+ /* html{
+    height: 100vh;
+} */
+
+header{
+    width: 100svw;
+    height: 44px;
+    background-color: white;
+    /* background-image: linear-gradient(blueviolet,pink); */
+
+    display: flex;
+    align-items: center;
+    font-size: larger;
+    font-weight: 700;
+    gap: 40px;
+    justify-content: flex-start;
+    position: absolute;
+    top: 0px;
+}
+.logo{
+    width: 150px;
+    height: 70%;
+    /* margin-right: 65svw; */
+}
+header .abox{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 600;
+    gap: 40px;
+    justify-content: flex-end;
+    padding-right: 40px;
+}
+header .abox a{
+    all: unset;
+    position:relative;
+    color: #784BA0;
 }
 section.top-section{
-    height: 300px;
+    height: 450px;
     /* background-color: grey; */
     display: flex;
     flex-direction: column;
     align-items: center;
     color: aliceblue;
+    box-shadow: 1px -40px 50px -6px rgba(0,0,0,1) inset;
 }
 section.top-section h1{
-    margin-top: 50px;
+    margin-top: 90px;
     font-size: 60px;
 }
 section.top-section p{
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 40px;
+    margin-bottom: 80px;
     font-size: 20px;
 }
 section.top-section input{
@@ -62,6 +102,9 @@ section.top-section input{
 }
 section.bottom-section>h2{
     color: aliceblue;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 2rem;
 }
 section.bottom-section{
     height: auto;
@@ -72,6 +115,7 @@ section.bottom-section{
     flex-direction: column;
     align-items: center;
     padding-top: 10px;
+    box-shadow: 0px 400px 164px 2px rgba(0,0,0,1) inset;
 }
 
 section.gridSection{
@@ -81,6 +125,7 @@ section.gridSection{
     justify-content: space-around;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
+    padding: 0 20px;
     /* justify-content: space-around; */
 }
 
@@ -142,7 +187,7 @@ section.metrics{
     margin-bottom: 10px;
 }
 
-.dmetric2{
+/* .dmetric2{
     background: conic-gradient(from 250deg,
     aqua 0deg 120deg,
     var(--my-grey) 120deg 360deg
@@ -170,13 +215,26 @@ section.metrics{
 }
 .dmetric41{
     background-color: blueviolet;
-}
+} */
 
 button.studentpickbutton{
-    height: 25px;
+    /* height: 25px; */
     border-radius: 5px;
     border-width: 0px;
-    padding: 5px;
+    padding: 4px;
     margin-top: 20px;
-    background-image: linear-gradient(blueviolet,rgb(162, 4, 162));
+    /* background-image: linear-gradient(blueviolet,rgb(162, 4, 162)); */
+    background-color: rgb(75, 0, 130);
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    transition-duration: 0.5s;
+}
+button.studentpickbutton:hover{
+    color: aliceblue;
+    background-color: blueviolet;
+}
+
+.error-container{
+    color: white;
 }

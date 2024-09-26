@@ -100,4 +100,6 @@
 // console.log(ack(4,0))
 
 
-  
+  string = "hello"
+  sub = "helw"
+

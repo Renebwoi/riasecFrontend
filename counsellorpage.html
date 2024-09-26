@@ -8,15 +8,18 @@
 </head>
 <body>
     <header> 
-        <a href="index.html">Home</a>
-        <p>About</p>
-        <a href="index.html" onclick="clearCookie()">Login</a>
+        <img src="careerguidelogo.png" alt="careerguidelogo" srcset="../careerguidelogo.png" class="logo">
+        <div class="abox">
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#" onclick="clearCookie()">Logout</a>
+        </div>
     </header>
 
     <section class="top-section">
         <h1>This is the counsellor page</h1>
-        <p>Communicate with student</p>
-        <input type="search" name="searchBar" id="searchBar" placeholder="Type in student name">
+        <p>Communicate with your students</p>
+        <input type="search" name="searchBar" id="searchBar" placeholder="Type in student name" onchange="filtername()">
     </section>
 
 
@@ -24,7 +27,7 @@
         <h2>Students In Your Care</h2>
         <section class="gridSection">
 
-            <section class="metrics">
+            <!-- <section class="metrics metric1">
                 <div class="graphMetric">
                     <div class="loadCircle">
                         <div class="spaceCircle">
@@ -40,7 +43,7 @@
                 </div>
             </section>
 
-            <section class="metrics">
+            <section class="metrics metric2">
                 <div class="graphMetric">
                     <div class="loadCircle dmetric2">
                         <div class="spaceCircle">
@@ -56,7 +59,7 @@
                 </div>
             </section>
 
-            <section class="metrics">
+            <section class="metrics metric3">
                 <div class="graphMetric">
                     <div class="loadCircle dmetric3">
                         <div class="spaceCircle">
@@ -72,7 +75,7 @@
                 </div>
             </section>
 
-            <section class="metrics">
+            <section class="metrics metric4">
                 <div class="graphMetric">
                     <div class="loadCircle dmetric4">
                         <div class="spaceCircle">
@@ -86,7 +89,7 @@
                     <h3>Big Parent</h3> 
                     <p>Amount of students You have had success with.</p>
                 </div>
-            </section>
+            </section> -->
             
         </section>
     </section>
