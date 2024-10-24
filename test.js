@@ -18,7 +18,7 @@
 // const data = [
 //   {
    
-//     id: 1,
+//     "lD": 1,
 //     username: 'Kala',
 //     email: 'kala@renz.com',
 //     specialization: 'Medicine',
@@ -30,7 +30,7 @@
 //   },
 //   {
     
-//     id: 2,
+//     "lD": 2,
 //     username: 'Mumbo',
 //     email: 'mumbo@gmail.com',
 //     specialization: 'Sports',
@@ -42,13 +42,13 @@
 //   },
 //   {
     
-//     id: 3,
+//     "lD": 3,
 //     username: 'Mumba',
 //     password: 'Helloguys',
 //     email: 'mumba@gmail.com',
 //     specialization: 'Dietetics',
 //     yearsOfExperience: 9,
-//     usercookie: 'qj1nnidzhz',
+//     usercookie: 'qj1nn"lD"zhz',
 //     __v: 0,
 //     phoneno: 8036782459
 //   }
@@ -100,6 +100,6 @@
 // console.log(ack(4,0))
 
 
-  string = "hello"
-  sub = "helw"
-
+  // string = "hello"
+  // sub = "helw"
+  

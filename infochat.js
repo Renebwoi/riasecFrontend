@@ -60,13 +60,13 @@ async function main() {
 
          for(let i = 0;i<messages.length;i++){
             if(messages[i].chattertype == "counsellor"){
-              chatbox.innerHTML += `<div class="counMsgBox">
+              chatbox.innerHTML += `<div class="studMsgBox msgBox">
                                                   <h3>Counsellor</h3>
                                                   <p>${messages[i].message}</p>
                                                   <p>${messages[i].time}</p>
                                                   </div>`
             }else{
-              chatbox.innerHTML += `<div class="counMsgBox">
+              chatbox.innerHTML += `<div class="counMsgBox msgBox">
                                                   <h3>Student</h3>
                                                   <p>${messages[i].message}</p>
                                                   <p>${messages[i].time}</p>
@@ -90,13 +90,13 @@ async function main() {
 
          for(let i = 0;i<messages.length;i++){
             if(messages[i].chattertype == "counsellor"){
-              chatbox.innerHTML += `<div class="counMsgBox">
+              chatbox.innerHTML += `<div class="studMsgBox msgBox">
                                                   <h3>Counsellor</h3>
                                                   <p>${messages[i].message}</p>
                                                   <p>${messages[i].time}</p>
                                                   </div>`
             }else{
-              chatbox.innerHTML += `<div class="counMsgBox">
+              chatbox.innerHTML += `<div class="counMsgBox msgBox">
                                                   <h3>Student</h3>
                                                   <p>${messages[i].message}</p>
                                                   <p>${messages[i].time}</p>

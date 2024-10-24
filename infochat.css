@@ -153,3 +153,17 @@ main{
 .error-container{
     color: white;
 }
+
+button.showbutton{
+    background-color: #663399;
+    padding: 10px;
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: 5px;
+    border-width: 0px;
+    color: white;
+    transition-duration: 1s;
+}
+button.showbutton:hover{
+    background-color: #27001c;
+}
